@@ -143,23 +143,8 @@ const FooterSection = () => {
         </div>
       </div>
 
-      {/* Floating WhatsApp Button */}
-      <a 
-        href="https://wa.me/33756882188" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-[1000] hover:scale-110 transition-transform duration-300"
-      >
-        <img 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/icons/whatsapp_icon-1.png" 
-          alt="Contact us on WhatsApp" 
-          width={60} 
-          height={60}
-          className="drop-shadow-lg"
-        />
-      </a>
-    </footer>
-  );
-};
-
-export default FooterSection;
+      </footer>
+    );
+  };
+  
+  export default FooterSection;
