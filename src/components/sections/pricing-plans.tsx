@@ -1,4 +1,5 @@
 import React from 'react';
+import { Check, Info, HelpCircle } from 'lucide-react';
 
 interface PricingPlanProps {
   title: string;
@@ -20,7 +21,7 @@ const PricingCard: React.FC<PricingPlanProps> = ({
   schedules,
 }) => {
   return (
-    <div className="flex flex-col h-full bg-[#E6F7F5] rounded-[20px] overflow-hidden transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+    <div className="flex flex-col h-full bg-[#E6F7F5] rounded-[30px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-transparent hover:border-[#29BDAD]/30">
       <div className="p-[30px] flex-grow">
         <h6 className="text-[#0B414C] font-bold text-[22px] leading-[1.2] mb-4">
           {title}
@@ -48,7 +49,7 @@ const PricingCard: React.FC<PricingPlanProps> = ({
           </div>
         )}
 
-        <hr className="border-t border-[#dee2e6] my-4" />
+        <hr className="border-t border-[#0B414C]/10 my-4" />
 
         <h6 className="text-[#6C757D] text-[14px] font-semibold mb-3 uppercase tracking-wider">
           Séances de la Classe
@@ -72,7 +73,7 @@ const PricingCard: React.FC<PricingPlanProps> = ({
       <div className="px-[30px] pb-[30px]">
         <a 
           href="https://www.talqeeny.com/login" 
-          className="block w-full text-center bg-[#29BDAD] text-white font-bold py-3 px-6 rounded-[20px] transition-all duration-300 hover:bg-[#23a598] text-[16px]"
+          className="block w-full text-center bg-[#29BDAD] text-white font-bold py-4 px-6 rounded-[20px] transition-all duration-300 hover:bg-[#23a598] text-[16px] shadow-md hover:shadow-lg"
         >
           Choisir ce plan
         </a>
@@ -130,15 +131,79 @@ const PricingPlans: React.FC = () => {
     }
   ];
 
+  const inclusions = [
+    "Cours en direct interactifs",
+    "Corrections personnalisées",
+    "Suivi de progression rigoureux",
+    "Conseils de révision exclusifs",
+    "Support et accompagnement dédié"
+  ];
+
   return (
-    <section className="py-[80px] bg-white">
-      <div className="container mx-auto px-6 max-w-[1200px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {plans.map((plan, index) => (
-            <div key={index} className={index === 3 ? "lg:col-start-1" : ""}>
-              <PricingCard {...plan} />
+    <section id="pricing" className="py-20 bg-white">
+      <div className="container mx-auto px-6 max-w-[1240px]">
+        <div className="text-center mb-16">
+          <h2 className="text-[#0B414C] text-[32px] md:text-[42px] font-extrabold mb-4">
+            Choisissez votre formule
+          </h2>
+          <p className="text-[#6C757D] text-[18px] max-w-[700px] mx-auto">
+            Selon votre objectif : lecture, tajwîd ou mémorisation. Trouvez le plan qui vous correspond.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
+          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            {plans.map((plan, index) => (
+              <div key={index}>
+                <PricingCard {...plan} />
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#0B414C] p-8 rounded-[30px] text-white h-fit lg:sticky lg:top-24">
+            <h3 className="text-[22px] font-bold mb-6 flex items-center gap-2">
+              <Info className="w-6 h-6 text-[#29BDAD]" />
+              Ce qui est inclus
+            </h3>
+            <ul className="space-y-4 mb-8">
+              {inclusions.map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-[15px]">
+                  <Check className="w-5 h-5 text-[#29BDAD] flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="bg-white/10 p-4 rounded-[20px] text-[14px] leading-[1.5]">
+              <p className="font-bold mb-1">Satisfait ou repositionné</p>
+              <p className="opacity-80">Si le groupe ne vous convient pas, nous trouvons une solution ensemble.</p>
             </div>
-          ))}
+          </div>
+        </div>
+
+        <div className="mt-12 bg-[#f0fafb] p-8 rounded-[30px] text-center border-2 border-dashed border-[#29BDAD]/30">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex items-center gap-3">
+              <HelpCircle className="w-8 h-8 text-[#29BDAD]" />
+              <p className="text-[#0B414C] font-bold text-[18px]">
+                Besoin d'aide pour choisir ?
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="#pricing"
+                className="text-[#29BDAD] font-bold hover:underline"
+              >
+                Réserver une séance gratuite
+              </a>
+              <span className="text-[#6C757D]">ou</span>
+              <a 
+                href="#test"
+                className="text-[#29BDAD] font-bold hover:underline"
+              >
+                Faites le test de niveau
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
