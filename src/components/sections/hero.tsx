@@ -61,21 +61,23 @@ export default function Hero() {
                   </ul>
                 </div>
 
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <a 
-                      href="#pricing-plans" 
-                      className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
-                    >
-                        Réserver une séance gratuite
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </a>
-                    <a 
-                      href="#how-it-works" 
-                      className="inline-flex items-center justify-center gap-3 bg-white border-2 border-[#29ABE2] text-[#29ABE2] hover:bg-[#F0FAFB] px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 font-inter"
-                    >
-                        Faire le test de niveau (2 min)
-                    </a>
-                  </div>
+                    <div className="flex flex-col sm:flex-row gap-4 items-center">
+                      <a 
+                        href="#pricing-plans" 
+                        className="inline-flex items-center justify-between bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-6 rounded-full font-bold text-[18px] transition-all duration-300 transform hover:scale-105 shadow-lg font-inter group min-w-[280px] max-w-[320px] text-left leading-tight"
+                      >
+                          <span>
+                            Réserver une séance<br />gratuite
+                          </span>
+                          <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform ml-4" />
+                      </a>
+                      <a 
+                        href="#how-it-works" 
+                        className="inline-flex items-center justify-center bg-white border-2 border-[#29ABE2] text-[#29ABE2] hover:bg-[#F0FAFB] px-10 py-6 rounded-full font-bold text-[18px] transition-all duration-300 transform hover:scale-105 font-inter min-w-[280px] max-w-[320px] text-center leading-tight"
+                      >
+                          Faire le test de niveau (2<br />min)
+                      </a>
+                    </div>
                   <div className="flex flex-col gap-2 mt-4">
                     <p className="text-[#5E6266] text-sm md:text-base font-medium pl-2">
                       à partir de 26€ / mois
