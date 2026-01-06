@@ -21,21 +21,20 @@ export default function FinalCTA() {
                 Rejoignez notre plateforme et progressez sereinement avec des professeurs experts en tajwid et mémorisation.
               </p>
               
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                  <a 
-                    href="#pricing-plans"
-                    className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-6 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-between gap-4 transform hover:scale-105 font-inter min-w-[280px] max-w-[320px] text-left leading-tight group"
-                  >
-                    <span>Réserver une séance<br />gratuite</span>
-                    <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                  <a 
-                    href="#how-it-works"
-                    className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 px-10 py-6 rounded-full text-[18px] font-bold transition-all duration-300 w-full sm:w-auto text-center font-inter min-w-[280px] max-w-[320px] leading-tight"
-                  >
-                    Faire le test de niveau (2<br />min)
-                  </a>
-                </div>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a 
+                  href="#pricing-plans"
+                  className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 transform hover:scale-105 font-inter"
+                >
+                  Réserver une séance gratuite <ArrowRight className="w-5 h-5" />
+                </a>
+                <a 
+                  href="#how-it-works"
+                  className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 w-full sm:w-auto text-center font-inter"
+                >
+                  Faire le test de niveau (2 min)
+                </a>
+              </div>
               
               <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 text-white/60 text-[15px] font-inter">
                 <div className="flex items-center gap-2">
