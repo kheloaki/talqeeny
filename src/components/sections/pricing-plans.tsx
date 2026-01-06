@@ -14,7 +14,7 @@ const PricingPlans = () => {
           "Mercredi 15:00 & Samedi 09:00"
         ],
         bgColor: "bg-[#D9F2F7]", // Light Blue
-        buttonBg: "bg-[#29ABE2]",
+        buttonBg: "#29ABE2",
         textColor: "text-[#003049]",
         checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
       },
@@ -47,6 +47,21 @@ const PricingPlans = () => {
         buttonBg: "#2CBDB2",
         textColor: "text-[#003049]",
         checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon3.svg"
+      },
+      {
+        title: "Imame Nafii",
+        price: "59€",
+        period: "/ mois",
+        yearlyInfo: "Soit l’équivalent de 355€ / 6 mois",
+        features: [
+          "Apprentissage Individuel",
+          "1 Séance par semaine",
+          "Mercredi 10:00 (UTC+1)"
+        ],
+        bgColor: "bg-[#E3F2FD]", // Light Sky Blue
+        buttonBg: "#33C6E5",
+        textColor: "text-[#003049]",
+        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
       }
     ];
 
@@ -54,7 +69,7 @@ const PricingPlans = () => {
       <section id="pricing-plans" className="pricing-section py-[100px] relative overflow-hidden">
         <div className="container px-4">
           {/* Main Background Container */}
-          <div className="bg-[#29ABE2] rounded-[40px] pt-[80px] pb-[100px] relative px-6 md:px-12 text-center text-white shadow-xl">
+          <div className="bg-[#29ABE2] rounded-[40px] pt-[80px] pb-[150px] md:pb-[200px] relative px-6 md:px-12 text-center text-white shadow-xl">
             
             {/* Section Header */}
             <div className="max-w-[800px] mx-auto mb-[60px]">
@@ -67,21 +82,21 @@ const PricingPlans = () => {
             </div>
 
             {/* Pricing Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto translate-y-[15%] md:translate-y-[25%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto translate-y-[10%] md:translate-y-[15%]">
 
             {plans.map((plan, index) => (
               <div 
                 key={index} 
-                className={`${plan.bgColor} rounded-[30px] overflow-hidden flex flex-col shadow-soft-ui transition-transform duration-300 hover:-translate-y-2`}
+                className={`${plan.bgColor} rounded-[30px] overflow-hidden flex flex-col shadow-soft-ui transition-transform duration-300 hover:-translate-y-2 text-left`}
               >
                 {/* Card Header */}
-                <div className="p-8 pb-0 text-left">
-                  <h4 className={`${plan.textColor} font-display text-2xl font-bold mb-4`}>
+                <div className="p-8 pb-0">
+                  <h4 className={`${plan.textColor} font-display text-xl font-bold mb-4`}>
                     {plan.title}
                   </h4>
                   <p className="text-[#5E6266] text-sm mb-1 font-sans">À partir de</p>
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className={`${plan.textColor} text-[3rem] font-bold leading-none font-display`}>
+                    <span className={`${plan.textColor} text-[2.5rem] font-bold leading-none font-display`}>
                       {plan.price}
                     </span>
                     <span className="text-[#5E6266] text-lg font-sans">{plan.period}</span>
@@ -106,33 +121,33 @@ const PricingPlans = () => {
                 </div>
 
                 {/* Card Footer Button */}
-                <div className="px-6 pb-6">
+                <div className="px-6 pb-6 mt-auto">
                   <a 
                     href="https://www.talqeeny.com/register"
                     className={`block w-full py-4 rounded-[15px] text-white font-sans font-bold text-center transition-opacity hover:opacity-90`}
-                    style={{ backgroundColor: index === 0 ? '#29ABE2' : index === 1 ? '#F9BE2F' : '#2CBDB2' }}
+                    style={{ backgroundColor: plan.buttonBg }}
                   >
                     Choisir ce plan
                   </a>
                 </div>
               </div>
             ))}
+            </div>
           </div>
         </div>
-      </div>
-      
-      {/* Background Decorative Element (matching one of the shapes from the screenshot) */}
-      <div className="absolute top-[20%] left-[-50px] opacity-20 pointer-events-none">
-        <Image 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/workProcessShape1_1-13.png"
-          alt="decoration"
-          width={250}
-          height={250}
-          className="animate-pulse"
-        />
-      </div>
-    </section>
-  );
+        
+        {/* Background Decorative Element */}
+        <div className="absolute top-[20%] left-[-50px] opacity-20 pointer-events-none">
+          <Image 
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/workProcessShape1_1-13.png"
+            alt="decoration"
+            width={250}
+            height={250}
+            className="animate-pulse"
+          />
+        </div>
+      </section>
+    );
 };
 
 export default PricingPlans;

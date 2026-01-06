@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -6,56 +6,55 @@
 
 @theme {
   --color-background: #ffffff;
-  --color-foreground: #003049;
+  --color-foreground: #0b485b;
 
   --color-card: #ffffff;
-  --color-card-foreground: #003049;
+  --color-card-foreground: #0b485b;
 
   --color-popover: #ffffff;
-  --color-popover-foreground: #003049;
+  --color-popover-foreground: #0b485b;
 
-  --color-primary: #29ABE2;
+  --color-primary: #2db9b0;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #E6643C;
-  --color-secondary-foreground: #ffffff;
+  --color-secondary: #e0f5f4;
+  --color-secondary-foreground: #0b485b;
 
-  --color-muted: #F0FAFB;
-  --color-muted-foreground: #5E6266;
+  --color-muted: #f3f4f6;
+  --color-muted-foreground: #6b7280;
 
-  --color-accent: #F9BE2F;
-  --color-accent-foreground: #003049;
+  --color-accent: #33c6e5;
+  --color-accent-foreground: #ffffff;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
 
-  --color-border: #E5E7EB;
-  --color-input: #E5E7EB;
-  --color-ring: #29ABE2;
+  --color-border: #dee2e6;
+  --color-input: #dee2e6;
+  --color-ring: #2db9b0;
 
-  --color-chart-1: #29ABE2;
-  --color-chart-2: #E6643C;
-  --color-chart-3: #F9BE2F;
-  --color-chart-4: #25D366;
-  --color-chart-5: #003049;
+  --color-chart-1: #2db9b0;
+  --color-chart-2: #33c6e5;
+  --color-chart-3: #0b485b;
+  --color-chart-4: #0dcaf0;
+  --color-chart-5: #6b7280;
 
-  --color-sidebar: #F0FAFB;
-  --sidebar-foreground: #003049;
-  --sidebar-primary: #29ABE2;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #F9BE2F;
-  --sidebar-accent-foreground: #003049;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #29ABE2;
+  --color-sidebar: #f9fafb;
+  --color-sidebar-foreground: #0b485b;
+  --color-sidebar-primary: #2db9b0;
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #e0f5f4;
+  --color-sidebar-accent-foreground: #2db9b0;
+  --color-sidebar-border: #dee2e6;
+  --color-sidebar-ring: #2db9b0;
 
   --font-sans: "Inter", sans-serif;
-  --font-display: "Poppins", sans-serif;
+  --font-heading: "Inter", sans-serif;
 
-  --radius-lg: 40px;
-  --radius-md: 20px;
-  --radius-sm: 12px;
-
-  --shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --radius-full: 50px;
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -84,30 +83,30 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: #E5E7EB;
+    border-color: #dee2e6;
   }
 
   :root {
     --background: #ffffff;
-    --foreground: #003049;
+    --foreground: #0b485b;
     --card: #ffffff;
-    --card-foreground: #003049;
+    --card-foreground: #0b485b;
     --popover: #ffffff;
-    --popover-foreground: #003049;
-    --primary: #29ABE2;
+    --popover-foreground: #0b485b;
+    --primary: #2db9b0;
     --primary-foreground: #ffffff;
-    --secondary: #E6643C;
-    --secondary-foreground: #ffffff;
-    --muted: #F0FAFB;
-    --muted-foreground: #5E6266;
-    --accent: #F9BE2F;
-    --accent-foreground: #003049;
+    --secondary: #e0f5f4;
+    --secondary-foreground: #0b485b;
+    --muted: #f3f4f6;
+    --muted-foreground: #6b7280;
+    --accent: #33c6e5;
+    --accent-foreground: #ffffff;
     --destructive: #ef4444;
     --destructive-foreground: #fafafa;
-    --border: #E5E7EB;
-    --input: #E5E7EB;
-    --ring: #29ABE2;
-    --radius: 40px;
+    --border: #dee2e6;
+    --input: #dee2e6;
+    --ring: #2db9b0;
+    --radius: 20px;
   }
 
   html {
@@ -123,47 +122,42 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
+    font-family: var(--font-heading);
     color: var(--foreground);
     font-weight: 700;
     line-height: 1.2;
   }
 
   h1 {
-    font-size: clamp(2.5rem, 5vw, 3.375rem);
-    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: 36px;
     margin-bottom: 1.5rem;
   }
 
-  h4 {
-    font-size: 1.5rem;
+  h3 {
+    font-size: 28px;
     font-weight: 600;
+  }
+
+  h6 {
+    font-size: 20px;
+  }
+
+  p {
+    margin-bottom: 1rem;
   }
 
   .container {
     width: 100%;
-    max-width: 1320px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .font-poppins {
-    font-family: var(--font-display);
-  }
-
-  .font-inter {
-    font-family: var(--font-sans);
-  }
-
-  section {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 
@@ -178,43 +172,79 @@
 }
 
 @layer utilities {
-  .rounded-section-bottom {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+  .bg-blob-soft {
+    background-color: #e0f5f4;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 
-  .rounded-section-top {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+  .pricing-card {
+    background-color: #e0f5f4;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
   }
 
-  .bg-soft-blue {
-    background-color: #F0FAFB;
+  .pricing-card:hover {
+    transform: translateY(-5px);
   }
 
-  .bg-terracotta {
-    background-color: #E6643C;
+  .pricing-card-content {
+    background-color: #ffffff;
+    margin: 0 15px;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
   }
 
-  .bg-golden {
-    background-color: #F9BE2F;
+  .btn-pill {
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-weight: 600;
+    transition: all 0.2s ease;
   }
 
-  .shadow-soft-ui {
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-  }
-
-  .whatsapp-float {
-    background-color: #25D366;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  .btn-hover-effect {
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-  
-  .btn-hover-effect:hover {
+  .btn-pill:hover {
+    filter: brightness(95%);
     transform: scale(1.02);
+  }
+
+  .breadcrumb-section {
+    background: linear-gradient(135deg, #e0f5f4 0%, #ffffff 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-header {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .footer-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #2db9b0;
+  }
+
+  .whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 50;
+    cursor: pointer;
   }
 }
