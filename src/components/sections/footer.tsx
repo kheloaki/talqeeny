@@ -61,9 +61,9 @@ const Footer = () => {
                   className="h-auto"
                 />
               </a>
-              <p className="text-[#6B7280] text-[16px] leading-[1.6] max-w-[320px]">
-                La seule plateforme où vos enfants apprennent et mémorisent réellement en direct, pendant la séance avec le professeur. Plus besoin de batailles à la maison : Talqeeny transforme l'apprentissage de l'arabe et du Coran en un moment efficace, ludique et serein.
-              </p>
+                <p className="text-[#6B7280] text-[16px] leading-[1.6] max-w-[320px]">
+                  La plateforme de référence pour apprendre le Coran en ligne, maîtriser le tajwid et mémoriser le Coran avec une pédagogie adaptée aux francophones. Apprenez en direct avec des experts certifiés et progressez sereinement, quel que soit votre âge ou votre niveau.
+                </p>
             </div>
 
             {/* Pages Links Column */}

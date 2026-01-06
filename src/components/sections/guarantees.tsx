@@ -2,10 +2,10 @@ import React from 'react';
 import { ShieldCheck, Lock, Headphones, RefreshCw } from 'lucide-react';
 
 const guarantees = [
-  { icon: ShieldCheck, text: "Groupes par niveau" },
-  { icon: RefreshCw, text: "Suivi personnalisé" },
-  { icon: Lock, text: "Paiement sécurisé" },
-  { icon: Headphones, text: "Support réactif 6j/7" }
+  { icon: ShieldCheck, text: "Groupes par niveau pour ne jamais se sentir perdu." },
+  { icon: RefreshCw, text: "Un compte rendu après chaque étape importante." },
+  { icon: Lock, text: "Transactions 100% sécurisées." },
+  { icon: Headphones, text: "Une équipe à votre écoute 6j/7." }
 ];
 
 export default function Guarantees() {

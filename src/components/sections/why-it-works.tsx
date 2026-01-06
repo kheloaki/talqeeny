@@ -127,7 +127,7 @@ const WhyItWorksSection: React.FC = () => {
                     Approche
                   </h4>
                   <p className="text-[#003049]/80 text-[16px] leading-[1.6] max-w-[280px]">
-                    Culturelle et coranique progressive, adaptée aux enfants de 4–15 ans.
+                    Culturelle et coranique progressive, adaptée à tous les profils de francophones.
                   </p>
                 </div>
               </div>

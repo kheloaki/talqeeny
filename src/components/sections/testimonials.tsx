@@ -6,38 +6,38 @@ import { Quote, Star } from 'lucide-react';
 const allTestimonials = [
   {
     name: "Ahmed",
-    role: "Adulte débutant",
-    content: "Une méthode incroyable, j'ai enfin appris à lire avec la méthode Nourania. Les cours en ligne sont très pratiques.",
+    role: "Adulte",
+    content: "Une méthode incroyable, j'ai enfin appris à lire avec la Nourania.",
     rating: 5
   },
   {
     name: "Sofia",
-    role: "Parent d'élève",
-    content: "Mes enfants adorent leurs cours de Coran en ligne, ils progressent sans s'en rendre compte grâce à la bienveillance des profs.",
+    role: "Parent",
+    content: "Mes enfants adorent leurs cours, ils progressent sans s'en rendre compte.",
     rating: 5
   },
   {
     name: "Yassine",
     role: "Étudiant",
-    content: "La correction des règles de tajwid est très précise, je sens vraiment la différence dans ma récitation du Coran.",
+    content: "La correction du tajwid est très précise, je sens vraiment la différence.",
     rating: 5
   },
   {
     name: "Leila",
     role: "Adulte",
-    content: "Le suivi mémoriser le coran (Hifz) m'aide à rester motivée et régulière dans mon apprentissage quotidien.",
+    content: "Le suivi hifz m'aide à rester motivée et régulière.",
     rating: 5
   },
   {
     name: "Karim",
-    role: "Adulte débutant",
-    content: "Professeurs très pédagogues et patients avec les débutants. Je recommande pour apprendre à lire le Coran.",
+    role: "Adulte",
+    content: "Professeurs très pédagogues et patients avec les débutants.",
     rating: 5
   },
   {
     name: "Mariam",
-    role: "Parent d'élève",
-    content: "La plateforme est simple et les cours en direct sont très interactifs. Un vrai bonheur pour toute la famille.",
+    role: "Parent",
+    content: "La plateforme est simple et les cours en direct sont très interactifs.",
     rating: 5
   }
 ];

@@ -88,9 +88,9 @@ const CourseDescription = () => {
                 Différenciation
               </h3>
               <ul className="list-disc pl-5 space-y-2 text-[#6B7280]">
-                <li>L’essentiel se fait en classe : l’enfant apprend et mémorise en séance.</li>
+                <li>L’essentiel se fait en classe : l’élève apprend et mémorise en séance.</li>
                 <li>Répétitions guidées par le professeur, posture positive et motivante.</li>
-                <li>Ancrage par petites écritures/visualisations selon l’âge (sans devoirs lourds).</li>
+                <li>Ancrage par petites écritures/visualisations selon le profil de l'élève (sans devoirs lourds).</li>
               </ul>
             </div>
 

@@ -38,7 +38,7 @@ const CourseDetails = () => {
                 Répétitions guidées par le professeur, posture positive et motivante.
               </li>
               <li>
-                Ancrage par petites écritures/visualisations selon l’âge (sans devoirs lourds).
+                Ancrage par petites écritures/visualisations selon le profil de l'élève (sans devoirs lourds).
               </li>
             </ul>
           </div>

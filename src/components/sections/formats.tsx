@@ -8,12 +8,12 @@ const formats = [
     pros: ["Motivation collective", "Dynamique d'échange", "Budget optimisé"],
     description: "Apprenez avec d'autres élèves de même niveau. Une ambiance conviviale pour progresser ensemble."
   },
-  {
-    icon: User,
-    title: "Cours particulier",
-    pros: ["100% personnalisé", "Rythme flexible", "Objectif précis"],
-    description: "Un professeur rien que pour vous. Idéal pour avancer plus vite ou travailler un point spécifique."
-  }
+    {
+      icon: User,
+      title: "Individuel",
+      pros: ["100% personnalisé", "Rythme flexible", "Objectif précis"],
+      description: "Un professeur rien que pour vous. Idéal pour avancer plus vite ou travailler un point spécifique."
+    }
 ];
 
 export default function Formats() {

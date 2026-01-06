@@ -24,14 +24,14 @@ export default function Teachers() {
     <section id="professeurs" className="py-20 bg-white">
       <div className="container px-6 mx-auto max-w-[1240px]">
         <div className="bg-[#F0FAFB] rounded-[40px] md:rounded-[60px] p-8 md:p-16">
-          <div className="text-center mb-16">
-            <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
-              Vos Professeurs
-            </h2>
-            <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
-              Une équipe passionnée et qualifiée pour vous guider vers vos objectifs.
-            </p>
-          </div>
+            <div className="text-center mb-16">
+              <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
+                Vos Professeurs
+              </h2>
+              <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
+                Nos enseignants sont sélectionnés pour leur pédagogie, leur maîtrise du tajwid et leur expérience dans l'enseignement aux francophones.
+              </p>
+            </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teachers.map((teacher, idx) => (
