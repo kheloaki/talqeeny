@@ -1,120 +1,185 @@
 "use client";
 
-import React, { useState } from 'react';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import React, { useState } from "react";
+import Image from "next/image";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-const faqs = [
+const faqData = [
   {
-    question: "Est-ce adapté aux adultes débutants ?",
-    answer: "Absolument. Nous avons des groupes spécifiquement dédiés aux adultes qui souhaitent commencer ou reprendre les bases de la lecture arabe en toute sérénité."
+    question: "Qu’est-ce que Talqeeny ?",
+    answer: "Talqeeny est une plateforme d'apprentissage en ligne innovante dédiée à l'enseignement du Coran et de la langue arabe pour les enfants. Notre approche unique se concentre sur l'apprentissage actif pendant les séances en direct."
   },
   {
-    question: "Faut-il déjà savoir lire l’arabe ?",
-    answer: "Non, pas du tout. Le niveau 1 est conçu pour ceux qui ne connaissent pas l'alphabet ou qui ont de grandes difficultés à déchiffrer les lettres."
+    question: "Quelle est votre expérience dans l’enseignement ?",
+    answer: "Nos enseignants sont sélectionnés pour leur expertise pédagogique et leur expérience avec le jeune public. Nous utilisons des méthodes modernes adaptées psychologiquement aux enfants."
   },
   {
-    question: "Combien de temps pour améliorer ma récitation ?",
-    answer: "Cela dépend de votre point de départ et de votre régularité. En général, les élèves constatent une amélioration de la fluidité après 4 à 8 semaines de cours réguliers."
+    question: "À partir de quel âge mon enfant peut-il s’inscrire ?",
+    answer: "Nos programmes sont conçus pour les enfants âgés de 4 à 15 ans, avec des cursus adaptés à chaque tranche d'âge et niveau de maturité."
   },
   {
-    question: "Tajwîd : c’est pratique ou théorique ?",
-    answer: "Nous privilégions l'approche pratique. Vous apprenez les règles à travers la récitation directe, avec des explications théoriques simplifiées pour comprendre le 'pourquoi'."
+    question: "Quelle est la différence entre Talqeeny et les autres instituts ?",
+    answer: "Contrairement aux instituts classiques, Talqeeny déplace l'effort de mémorisation au cœur de la séance live. L'enfant n'est pas seul face à ses devoirs à la maison."
   },
   {
-    question: "Comment se déroule la correction ?",
-    answer: "Le professeur vous écoute réciter en direct et vous arrête avec bienveillance pour corriger la prononciation ou l'application d'une règle de tajwîd."
+    question: "Comment se déroulent les cours ?",
+    answer: "Les cours se déroulent en petits groupes via notre plateforme interactive. Chaque séance combine apprentissage théorique, pratique ludique et moments de mémorisation guidée."
   },
   {
-    question: "Comment fonctionne la mémorisation et les révisions ?",
-    answer: "Nous suivons un plan structuré : mémorisation de nouvelles portions, révision des portions récentes et consolidation des anciennes (le 'vieux' hifz)."
+    question: "Quels sont les cursus proposés ?",
+    answer: "Nous proposons trois cursus principaux : Arabe (lecture et expression), Nourania (phonétique et règles de lecture) et Coran (mémorisation et Tajwid)."
   },
   {
-    question: "Groupe ou individuel : que choisir ?",
-    answer: "Le groupe favorise l'émulation et la motivation. L'individuel permet d'avancer à son propre rythme et de cibler des besoins très spécifiques. Le test de niveau peut vous aider à choisir."
+    question: "Comment savoir si mon enfant progresse ?",
+    answer: "Nous assurons un suivi régulier avec des évaluations continues. Les parents reçoivent des rapports de progression et peuvent visualiser les résultats via notre interface dédiée."
   },
   {
-    question: "Quels horaires (soir / week-end) ?",
-    answer: "Nous proposons des créneaux variés, incluant les soirées et les week-ends, pour s'adapter aux emplois du temps des étudiants et des professionnels."
+    question: "Dois-je aider mon enfant à la maison ?",
+    answer: "L'objectif de Talqeeny est d'alléger la charge des parents. Un accompagnement très léger suffit, car l'essentiel du travail est réalisé avec le professeur."
   },
   {
-    question: "Combien d’élèves par groupe ?",
-    answer: "Nos groupes sont restreints (généralement entre 4 et 8 élèves) pour garantir un temps de parole et de correction suffisant pour chacun."
+    question: "Quels sont les tarifs ?",
+    answer: "Nous proposons différentes formules adaptées à vos besoins, avec des options de paiement mensuelles ou annuelles très compétitives."
   },
   {
-    question: "Quel matériel faut-il ?",
-    answer: "Une connexion internet stable, un ordinateur ou une tablette, ainsi qu'un micro-casque de bonne qualité pour bien entendre et être entendu."
-  },
-  {
-    question: "Cours en direct : sur quelle plateforme ?",
-    answer: "Les cours se déroulent via une plateforme de visioconférence dédiée, accessible facilement depuis votre navigateur ou une application."
-  },
-  {
-    question: "Est-ce que je peux changer de groupe/niveau ?",
-    answer: "Oui, si après quelques séances nous constatons que le niveau ne correspond pas à votre progression, nous effectuons un réajustement vers un groupe plus adapté."
-  },
-  {
-    question: "Comment réserver la séance gratuite ?",
-    answer: "Il vous suffit de cliquer sur le bouton 'Réserver une séance gratuite' et de remplir le court formulaire. Nous vous recontacterons rapidement."
-  },
-  {
-    question: "Puis-je arrêter / reprendre plus tard ?",
-    answer: "Nous offrons une certaine flexibilité. Vous pouvez suspendre votre abonnement selon nos conditions générales de vente consultables lors de l'inscription."
-  },
-  {
-    question: "Peut-on faire seulement tajwîd / seulement mémorisation ?",
-    answer: "Oui, nos plans sont flexibles. Vous pouvez choisir de vous concentrer sur la correction de la lecture (tajwîd) ou sur l'accompagnement à la mémorisation."
-  },
-  {
-    question: "Est-ce adapté aux francophones (explications en français) ?",
-    answer: "Oui, c'est notre spécialité. Toutes les explications techniques sont données en français clair pour faciliter la compréhension immédiate des concepts."
+    question: "Qui sont les professeurs Talqeeny ?",
+    answer: "Nos professeurs sont des experts bilingues passionnés par la transmission, formés spécifiquement à la méthode Talqeeny pour garantir une expérience bienveillante et efficace."
   }
 ];
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
+const AccordionItem = ({ 
+  question, 
+  answer, 
+  isOpen, 
+  onClick 
+}: { 
+  question: string; 
+  answer: string; 
+  isOpen: boolean; 
+  onClick: () => void;
+}) => {
   return (
-    <section id="faq" className="py-20 bg-[#f0fafb]">
-      <div className="container px-6 mx-auto max-w-[900px]">
-        <div className="text-center mb-16">
-          <h2 className="text-[#0B414C] text-[32px] md:text-[42px] font-extrabold mb-4">
-            Questions Fréquentes
-          </h2>
-          <p className="text-[#6C757D] text-[18px]">
-            Tout ce que vous devez savoir pour commencer sereinement.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          {faqs.map((faq, idx) => (
-            <div 
-              key={idx} 
-              className="bg-white rounded-[20px] overflow-hidden shadow-sm border border-transparent hover:border-[#29BDAD]/20 transition-all"
-            >
-              <button 
-                onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left"
-              >
-                <span className="text-[#0B414C] font-bold text-[18px] leading-[1.4]">
-                  {faq.question}
-                </span>
-                {openIndex === idx ? (
-                  <ChevronUp className="w-6 h-6 text-[#29BDAD] flex-shrink-0" />
-                ) : (
-                  <ChevronDown className="w-6 h-6 text-[#6C757D] flex-shrink-0" />
-                )}
-              </button>
-              
-              {openIndex === idx && (
-                <div className="px-8 pb-6 text-[#6C757D] text-[16px] leading-[1.6]">
-                  <hr className="border-t border-[#f0fafb] mb-6" />
-                  {faq.answer}
-                </div>
-              )}
-            </div>
-          ))}
+    <div className="mb-4">
+      <button
+        onClick={onClick}
+        className={cn(
+          "w-full flex items-center justify-between py-[12px] px-[20px] text-left transition-all duration-300",
+          "bg-[#F0FAFB] hover:bg-[#E1F5F7] rounded-[12px]",
+          "border-none shadow-none group"
+        )}
+      >
+        <span className="text-[#003049] font-display font-semibold text-[16px] leading-[1.4]">
+          {question}
+        </span>
+        <ChevronDown 
+          className={cn(
+            "w-5 h-5 text-[#29ABE2] transition-transform duration-300",
+            isOpen ? "rotate-180" : ""
+          )} 
+        />
+      </button>
+      <div
+        className={cn(
+          "grid transition-all duration-300 ease-in-out",
+          isOpen ? "grid-rows-[1fr] opacity-100 mt-2" : "grid-rows-[0fr] opacity-0"
+        )}
+      >
+        <div className="overflow-hidden">
+          <div className="px-[20px] pb-[10px] text-[#5E6266] font-sans text-[15px] leading-[1.6]">
+            {answer}
+          </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const midpoint = Math.ceil(faqData.length / 2);
+  const leftColumn = faqData.slice(0, midpoint);
+  const rightColumn = faqData.slice(midpoint);
+
+  return (
+    <section className="relative py-[100px] overflow-hidden">
+      {/* Background Image Container with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/faq-21.jpg"
+          alt="Children learning"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Soft UI Rounded Corners Overlay */}
+        <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] rounded-[50px] mx-4 md:mx-8 xl:mx-auto max-w-[1320px] border border-white/20"></div>
+      </div>
+
+      <div className="container relative z-10">
+        <div className="max-w-[1240px] mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-[50px]">
+            <h2 className="font-display font-bold text-[40px] text-[#003049] mb-4 tracking-tight">
+              FAQ
+            </h2>
+          </div>
+
+          {/* Accordion Grid */}
+          <div className="row flex flex-wrap -mx-4">
+            {/* Left Column */}
+            <div className="w-full xl:w-1/2 px-4">
+              {leftColumn.map((item, idx) => (
+                <AccordionItem
+                  key={`left-${idx}`}
+                  question={item.question}
+                  answer={item.answer}
+                  isOpen={openIndex === idx}
+                  onClick={() => toggleAccordion(idx)}
+                />
+              ))}
+            </div>
+
+            {/* Right Column */}
+            <div className="w-full xl:w-1/2 px-4">
+              {rightColumn.map((item, idx) => {
+                const globalIndex = idx + midpoint;
+                return (
+                  <AccordionItem
+                    key={`right-${idx}`}
+                    question={item.question}
+                    answer={item.answer}
+                    isOpen={openIndex === globalIndex}
+                    onClick={() => toggleAccordion(globalIndex)}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Responsive Styles for Rounded Section */}
+      <style jsx global>{`
+        .container {
+          width: 100%;
+          max-width: 1320px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+        @media (max-width: 1200px) {
+          h2.font-display {
+            font-size: 32px;
+          }
+        }
+      `}</style>
     </section>
   );
 }

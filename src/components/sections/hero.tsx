@@ -1,86 +1,85 @@
 import React from 'react';
 import Image from 'next/image';
-import { Check, ArrowRight } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 
+/**
+ * Hero component for Talqeeny.
+ * Featuring the clear, playful aesthetic with rounded corners and organic shapes.
+ */
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-[115px] pb-[75px] md:pt-[160px] md:pb-[120px] bg-[#f0fafb]">
-      {/* Background shapes */}
-      <div className="absolute left-0 top-0 pointer-events-none select-none z-0">
-        <Image
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png"
-          alt="shape"
-          width={300}
-          height={300}
-          className="w-[200px] md:w-auto"
-        />
-      </div>
-      <div className="absolute right-0 top-0 pointer-events-none select-none z-0">
-        <Image
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png"
-          alt="shape"
-          width={350}
-          height={350}
-          className="w-[200px] md:w-auto"
-        />
-      </div>
-
-      <div className="container relative z-10 px-6 mx-auto max-w-[1240px]">
-        <div className="flex flex-col items-center justify-center text-center">
-          <h1 className="text-[#0B414C] text-[36px] md:text-[56px] font-extrabold leading-[1.1] tracking-[-0.02em] font-inter mb-6 max-w-[900px]">
-            Cours de Coran en ligne pour francophones (enfants & adultes)
-          </h1>
+    <section className="relative overflow-hidden bg-white pt-20 md:pt-32 pb-0">
+      {/* Soft rounded light blue background container */}
+      <div className="container mx-auto px-6">
+        <div className="relative bg-[#F0FAFB] rounded-[40px] md:rounded-[60px] p-8 md:p-16 lg:p-20 overflow-hidden min-h-[550px] flex items-center">
           
-          <p className="text-[#6C757D] text-[18px] md:text-[22px] leading-[1.5] max-w-[800px] mb-10">
-            Apprenez à lire avec tajwîd, corrigez votre récitation et progressez en mémorisation en direct avec un professeur.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a 
-              href="#pricing"
-              className="bg-[#29BDAD] hover:bg-[#23a294] text-white px-8 py-4 rounded-[20px] text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto text-center"
-            >
-              Réserver une séance gratuite
-            </a>
-            <a 
-              href="#test"
-              className="bg-white border-2 border-[#29BDAD] text-[#29BDAD] hover:bg-[#f0fafb] px-8 py-4 rounded-[20px] text-[18px] font-bold transition-all duration-300 w-full sm:w-auto text-center"
-            >
-              Faire le test de niveau (2 min)
-            </a>
+          {/* Decorative Shapes */}
+          <div className="absolute top-10 left-10 w-24 h-24 pointer-events-none hidden md:block">
+            <img 
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png" 
+              alt="decorative shape"
+              className="w-full h-full object-contain opacity-80"
+            />
+          </div>
+          <div className="absolute bottom-10 left-1/2 w-32 h-32 pointer-events-none hidden lg:block">
+            <img 
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png" 
+              alt="decorative shape"
+              className="w-full h-full object-contain opacity-60"
+            />
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10">
-            {[
-              "Cours en direct (pas de vidéos pré-enregistrées)",
-              "Petits groupes ou cours particuliers",
-              "Corrections et suivi personnalisés"
-            ].map((bullet, idx) => (
-              <div key={idx} className="flex items-center gap-2 text-[#0B414C] font-semibold">
-                <div className="bg-[#29BDAD] rounded-full p-1">
-                  <Check className="w-4 h-4 text-white" />
-                </div>
-                <span>{bullet}</span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 space-y-8">
+              <div className="max-w-2xl">
+                <h1 className="text-[40px] md:text-[54px] font-bold text-[#003049] leading-[1.1] mb-6 font-poppins">
+                  Ils apprennent… et vous respirez !
+                </h1>
+                <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter">
+                  Talqeeny est la plateforme en ligne qui aide vos enfants à progresser réellement dans l’apprentissage du Coran et de l’arabe, pendant la séance live, avec un accompagnement léger des parents. Groupes réduits, rituels simples, résultats visibles.
+                </p>
               </div>
-            ))}
+
+              <div className="flex flex-wrap gap-4">
+                <a 
+                  href="https://www.talqeeny.com/register" 
+                  className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
+                >
+                  Réserver une séance gratuite
+                  <MoveRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+
+            {/* Right Image Column */}
+            <div className="lg:col-span-5 flex justify-center lg:justify-end items-center">
+              <div className="relative w-full max-w-[480px]">
+                {/* Visual backdrop for the image to match the "abstract shapes" requirement */}
+                <div className="absolute inset-0 bg-white/20 blur-3xl rounded-full scale-110 -z-10"></div>
+                <img 
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/talqeeny_enfant-5.png" 
+                  alt="Enfant heureux avec un livre de Coran"
+                  width={550}
+                  height={550}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  loading="eager"
+                />
+              </div>
+            </div>
           </div>
-
-          <p className="text-[#6C757D] text-[15px] font-medium mb-12">
-            On vous place dans le bon niveau, sans pression.
-          </p>
-
-          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[14px] font-bold text-[#29BDAD] uppercase tracking-wider">
-            {["Programme", "Niveaux", "Tarifs", "Avis", "FAQ"].map((link) => (
-              <a 
-                key={link} 
-                href={`#${link.toLowerCase()}`}
-                className="hover:text-[#0B414C] transition-colors"
-              >
-                {link}
-              </a>
-            ))}
-          </nav>
         </div>
+      </div>
+      
+      {/* Secondary Background Decor - matching the 'floating curves' mentioned in art direction */}
+      <div className="absolute -bottom-10 left-0 w-full overflow-hidden pointer-events-none">
+        <svg viewBox="0 0 1440 320" className="w-full h-auto">
+          <path 
+            fill="#ffffff" 
+            fillOpacity="1" 
+            d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,240C1120,256,1280,256,1360,256L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </section>
   );

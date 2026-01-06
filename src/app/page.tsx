@@ -1,5 +1,8 @@
 import Header from "@/components/sections/header";
 import Hero from "@/components/sections/hero";
+import ProblemStatement from "@/components/sections/problem-statement";
+import WhyItWorks from "@/components/sections/why-it-works";
+import CursusPathway from "@/components/sections/cursus-pathway";
 import TrustBar from "@/components/sections/trust-bar";
 import Testimonials from "@/components/sections/testimonials";
 import PourQui from "@/components/sections/pour-qui";
@@ -14,6 +17,7 @@ import Results from "@/components/sections/results";
 import PricingPlans from "@/components/sections/pricing-plans";
 import Guarantees from "@/components/sections/guarantees";
 import LeadMagnet from "@/components/sections/lead-magnet";
+import RecentBlogs from "@/components/sections/recent-blogs";
 import FAQ from "@/components/sections/faq";
 import FinalCTA from "@/components/sections/final-cta";
 import FooterSection from "@/components/sections/footer";
@@ -25,6 +29,9 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <TrustBar />
+        <ProblemStatement />
+        <WhyItWorks />
+        <CursusPathway />
         <Testimonials />
         <PourQui />
         <Objectifs />
@@ -38,6 +45,7 @@ export default function Home() {
         <PricingPlans />
         <Guarantees />
         <LeadMagnet />
+        <RecentBlogs />
         <FAQ />
         <FinalCTA />
       </main>

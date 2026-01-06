@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -6,61 +6,56 @@
 
 @theme {
   --color-background: #ffffff;
-  --color-foreground: #0b414c;
+  --color-foreground: #003049;
 
   --color-card: #ffffff;
-  --color-card-foreground: #0b414c;
+  --color-card-foreground: #003049;
 
   --color-popover: #ffffff;
-  --color-popover-foreground: #0b414c;
+  --color-popover-foreground: #003049;
 
-  --color-primary: #29bdad;
+  --color-primary: #29ABE2;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #17a2b8;
+  --color-secondary: #E6643C;
   --color-secondary-foreground: #ffffff;
 
-  --color-muted: #f0fafb;
-  --color-muted-foreground: #6c757d;
+  --color-muted: #F0FAFB;
+  --color-muted-foreground: #5E6266;
 
-  --color-accent: #e6f7f5;
-  --color-accent-foreground: #0b414c;
+  --color-accent: #F9BE2F;
+  --color-accent-foreground: #003049;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
 
-  --color-border: #dee2e6;
-  --color-input: #dee2e6;
-  --color-ring: #29bdad;
+  --color-border: #E5E7EB;
+  --color-input: #E5E7EB;
+  --color-ring: #29ABE2;
 
-  --color-chart-1: #29bdad;
-  --color-chart-2: #17a2b8;
-  --color-chart-3: #0b414c;
-  --color-chart-4: #f1c40f;
-  --color-chart-5: #e74c3c;
+  --color-chart-1: #29ABE2;
+  --color-chart-2: #E6643C;
+  --color-chart-3: #F9BE2F;
+  --color-chart-4: #25D366;
+  --color-chart-5: #003049;
 
-  --color-sidebar: #f0fafb;
-  --color-sidebar-foreground: #0b414c;
-  --color-sidebar-primary: #29bdad;
-  --color-sidebar-primary-foreground: #ffffff;
-  --color-sidebar-accent: #e6f7f5;
-  --color-sidebar-accent-foreground: #0b414c;
-  --color-sidebar-border: #dee2e6;
-  --color-sidebar-ring: #29bdad;
-
-  --color-heading: #0b414c;
-  --color-body: #6c757d;
-  --color-primary-light: #e6f7f5;
-  --color-breadcrumb-bg: #f0fafb;
+  --color-sidebar: #F0FAFB;
+  --sidebar-foreground: #003049;
+  --sidebar-primary: #29ABE2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #F9BE2F;
+  --sidebar-accent-foreground: #003049;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #29ABE2;
 
   --font-sans: "Inter", sans-serif;
-  --font-display: "Inter", sans-serif;
+  --font-display: "Poppins", sans-serif;
 
-  --radius-lg: 20px;
-  --radius-md: 16px;
-  --radius-sm: 8px;
+  --radius-lg: 40px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
 
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.05);
 
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
@@ -89,38 +84,30 @@
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: #dee2e6;
+    border-color: #E5E7EB;
   }
 
   :root {
     --background: #ffffff;
-    --foreground: #0b414c;
+    --foreground: #003049;
     --card: #ffffff;
-    --card-foreground: #0b414c;
+    --card-foreground: #003049;
     --popover: #ffffff;
-    --popover-foreground: #0b414c;
-    --primary: #29bdad;
+    --popover-foreground: #003049;
+    --primary: #29ABE2;
     --primary-foreground: #ffffff;
-    --secondary: #17a2b8;
+    --secondary: #E6643C;
     --secondary-foreground: #ffffff;
-    --muted: #f0fafb;
-    --muted-foreground: #6c757d;
-    --accent: #e6f7f5;
-    --accent-foreground: #0b414c;
+    --muted: #F0FAFB;
+    --muted-foreground: #5E6266;
+    --accent: #F9BE2F;
+    --accent-foreground: #003049;
     --destructive: #ef4444;
     --destructive-foreground: #fafafa;
-    --border: #dee2e6;
-    --input: #dee2e6;
-    --ring: #29bdad;
-    --radius: 20px;
-    --sidebar-background: #f0fafb;
-    --sidebar-foreground: #0b414c;
-    --sidebar-primary: #29bdad;
-    --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #e6f7f5;
-    --sidebar-accent-foreground: #0b414c;
-    --sidebar-border: #dee2e6;
-    --sidebar-ring: #29bdad;
+    --border: #E5E7EB;
+    --input: #E5E7EB;
+    --ring: #29ABE2;
+    --radius: 40px;
   }
 
   html {
@@ -130,54 +117,53 @@
   body {
     font-family: var(--font-sans);
     background-color: var(--background);
-    color: var(--color-body);
+    color: var(--muted-foreground);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--color-heading);
     font-family: var(--font-display);
+    color: var(--foreground);
     font-weight: 700;
     line-height: 1.2;
   }
 
   h1 {
-    font-size: 48px;
+    font-size: clamp(2.5rem, 5vw, 3.375rem);
     font-weight: 800;
-    letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: clamp(2rem, 4vw, 2.5rem);
     margin-bottom: 1.5rem;
   }
 
-  h3 {
-    font-size: 24px;
-    margin-bottom: 1rem;
-  }
-
   h4 {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 600;
-  }
-
-  p {
-    margin-bottom: 1.25rem;
   }
 
   .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
+  .font-poppins {
+    font-family: var(--font-display);
+  }
+
   .font-inter {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-sans);
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -192,19 +178,43 @@
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .rounded-section-bottom {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .rounded-section-top {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .bg-soft-blue {
+    background-color: #F0FAFB;
+  }
+
+  .bg-terracotta {
+    background-color: #E6643C;
+  }
+
+  .bg-golden {
+    background-color: #F9BE2F;
+  }
+
+  .shadow-soft-ui {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .whatsapp-float {
+    background-color: #25D366;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-hover-effect {
+    transition: transform 0.2s ease, background-color 0.2s ease;
   }
   
-  .bg-hero-gradient {
-    background: linear-gradient(135deg, #f0fafb 0%, #ffffff 100%);
-  }
-
-  .pricing-card-shadow {
-    box-shadow: var(--shadow-card);
-  }
-
-  .transition-standard {
-    transition: all 0.3s ease-in-out;
+  .btn-hover-effect:hover {
+    transform: scale(1.02);
   }
 }

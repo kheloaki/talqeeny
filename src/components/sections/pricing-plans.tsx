@@ -1,210 +1,134 @@
 import React from 'react';
-import { Check, Info, HelpCircle } from 'lucide-react';
+import Image from 'next/image';
 
-interface PricingPlanProps {
-  title: string;
-  price: string;
-  equivalent: string;
-  type: 'Groupe' | 'Individuel';
-  sessionsPerWeek: number;
-  paymentInstallments?: boolean;
-  schedules: string[];
-}
-
-const PricingCard: React.FC<PricingPlanProps> = ({
-  title,
-  price,
-  equivalent,
-  type,
-  sessionsPerWeek,
-  paymentInstallments,
-  schedules,
-}) => {
-  return (
-    <div className="flex flex-col h-full bg-[#E6F7F5] rounded-[30px] overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-transparent hover:border-[#29BDAD]/30">
-      <div className="p-[30px] flex-grow">
-        <h6 className="text-[#0B414C] font-bold text-[22px] leading-[1.2] mb-4">
-          {title}
-        </h6>
-        
-        <div className="mb-4">
-          <span className="text-[#0B414C] font-extrabold text-[32px] block">
-            {price}
-          </span>
-          <small className="block text-[#6C757D] text-[14px] mt-1">
-            Soit l&apos;équivalent de {equivalent}
-          </small>
-        </div>
-
-        <div className="text-[#0B414C] text-[16px] mb-3 leading-[1.4]">
-          Apprentissage en <strong>{type}</strong><br />
-          {sessionsPerWeek} Séance{sessionsPerWeek > 1 ? 's' : ''} par semaine
-        </div>
-
-        {paymentInstallments && (
-          <div className="mb-4">
-            <span className="inline-block bg-[#17A2B8] text-white text-[12px] font-semibold px-2 py-1 rounded-[4px]">
-              Paiement en 2 fois Disponible
-            </span>
-          </div>
-        )}
-
-        <hr className="border-t border-[#0B414C]/10 my-4" />
-
-        <h6 className="text-[#6C757D] text-[14px] font-semibold mb-3 uppercase tracking-wider">
-          Séances de la Classe
-        </h6>
-        
-        <ul className="space-y-2">
-          {schedules.map((schedule, index) => {
-            const [day, time] = schedule.split(' | ');
-            return (
-              <li key={index} className="text-[#0B414C] text-[14px] flex items-start">
-                <span className="mr-2 text-[#29BDAD]">•</span>
-                <span>
-                  <strong>{day}</strong> | {time}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      <div className="px-[30px] pb-[30px]">
-        <a 
-          href="https://www.talqeeny.com/login" 
-          className="block w-full text-center bg-[#29BDAD] text-white font-bold py-4 px-6 rounded-[20px] transition-all duration-300 hover:bg-[#23a598] text-[16px] shadow-md hover:shadow-lg"
-        >
-          Choisir ce plan
-        </a>
-      </div>
-    </div>
-  );
-};
-
-const PricingPlans: React.FC = () => {
-  const plans: PricingPlanProps[] = [
+const PricingPlans = () => {
+  const plans = [
     {
-      title: 'Abou Bakr Assidiq',
-      price: '41 € / mois',
-      equivalent: '489 € / an',
-      type: 'Groupe',
-      sessionsPerWeek: 2,
-      paymentInstallments: true,
-      schedules: [
-        'Mercredi | 07/01/2026 15:00 (UTC+1)',
-        'Samedi | 10/01/2026 09:00 (UTC+1)'
-      ]
+      title: "Arabe",
+      price: "24€",
+      period: "/ mois",
+      yearlyInfo: "Soit l’équivalent de 289€ / an",
+      features: [
+        "Lire et écrire",
+        "S'exprimer avec confiance",
+        "Progresser en jouant"
+      ],
+      bgColor: "bg-[#D9F2F7]", // Light Blue
+      buttonBg: "bg-[#29ABE2]",
+      textColor: "text-[#003049]",
+      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
     },
     {
-      title: 'Omar Al Farouq',
-      price: '26 € / mois',
-      equivalent: '309 € / an',
-      type: 'Groupe',
-      sessionsPerWeek: 1,
-      paymentInstallments: true,
-      schedules: [
-        'Vendredi | 09/01/2026 18:00 (UTC+1)'
-      ]
+      title: "Nourania",
+      price: "63€",
+      period: "/ mois",
+      yearlyInfo: "Soit l’équivalent de 189 € / 3 mois",
+      features: [
+        "Lire le Coran correctement",
+        "Découvrir le tajwid simplement",
+        "Gagner en fluidité"
+      ],
+      bgColor: "bg-[#FFF4E0]", // Light Yellow/Beige
+      buttonBg: "#F9BE2F",
+      textColor: "text-[#003049]",
+      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon1.svg"
     },
     {
-      title: 'Othmane Ibn Affane',
-      price: '59 € / mois',
-      equivalent: '355 € / 6 mois',
-      type: 'Individuel',
-      sessionsPerWeek: 1,
-      paymentInstallments: true,
-      schedules: [
-        'Dimanche | 11/01/2026 18:30 (UTC+1)'
-      ]
-    },
-    {
-      title: 'Imame Nafii',
-      price: '59 € / mois',
-      equivalent: '355 € / 6 mois',
-      type: 'Individuel',
-      sessionsPerWeek: 1,
-      paymentInstallments: true,
-      schedules: [
-        'Mercredi | 07/01/2026 10:00 (UTC+1)'
-      ]
+      title: "Coran",
+      price: "26€",
+      period: "/ mois",
+      yearlyInfo: "Soit l’équivalent de 309€ / an",
+      features: [
+        "Mémoriser en direct en séance",
+        "Intégrer le tajwid naturellement",
+        "Progresser sans stress à la maison"
+      ],
+      bgColor: "bg-[#E0F2F1]", // Light Green/Teal
+      buttonBg: "#2CBDB2",
+      textColor: "text-[#003049]",
+      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon3.svg"
     }
   ];
 
-  const inclusions = [
-    "Cours en direct interactifs",
-    "Corrections personnalisées",
-    "Suivi de progression rigoureux",
-    "Conseils de révision exclusifs",
-    "Support et accompagnement dédié"
-  ];
-
   return (
-    <section id="pricing" className="py-20 bg-white">
-      <div className="container mx-auto px-6 max-w-[1240px]">
-        <div className="text-center mb-16">
-          <h2 className="text-[#0B414C] text-[32px] md:text-[42px] font-extrabold mb-4">
-            Choisissez votre formule
-          </h2>
-          <p className="text-[#6C757D] text-[18px] max-w-[700px] mx-auto">
-            Selon votre objectif : lecture, tajwîd ou mémorisation. Trouvez le plan qui vous correspond.
-          </p>
-        </div>
+    <section className="pricing-section py-[100px] relative overflow-hidden">
+      <div className="container px-4">
+        {/* Main Background Container */}
+        <div className="bg-[#E6643C] rounded-[40px] pt-[80px] pb-[100px] relative px-6 md:px-12 text-center text-white">
+          
+          {/* Section Header */}
+          <div className="max-w-[800px] mx-auto mb-[60px]">
+            <h2 className="text-white font-display text-[2.5rem] md:text-[3rem] font-bold leading-[1.2] mb-6">
+              Ouvrez à votre enfant les portes du Coran et de l’arabe !
+            </h2>
+            <p className="text-white/90 font-sans text-lg opacity-90">
+              Choisissez le cursus qui transformera son apprentissage en une réussite certaine.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
-          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          {/* Pricing Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto translate-y-[15%] md:translate-y-[25%]">
             {plans.map((plan, index) => (
-              <div key={index}>
-                <PricingCard {...plan} />
+              <div 
+                key={index} 
+                className={`${plan.bgColor} rounded-[30px] overflow-hidden flex flex-col shadow-soft-ui transition-transform duration-300 hover:-translate-y-2`}
+              >
+                {/* Card Header */}
+                <div className="p-8 pb-0 text-left">
+                  <h4 className={`${plan.textColor} font-display text-2xl font-bold mb-4`}>
+                    {plan.title}
+                  </h4>
+                  <p className="text-[#5E6266] text-sm mb-1 font-sans">À partir de</p>
+                  <div className="flex items-baseline gap-1 mb-2">
+                    <span className={`${plan.textColor} text-[3rem] font-bold leading-none font-display`}>
+                      {plan.price}
+                    </span>
+                    <span className="text-[#5E6266] text-lg font-sans">{plan.period}</span>
+                  </div>
+                  <p className="text-[#5E6266] text-xs font-sans mb-8">
+                    {plan.yearlyInfo}
+                  </p>
+                </div>
+
+                {/* Features List */}
+                <div className="px-8 flex-grow">
+                  <ul className="space-y-4 text-left border-t border-black/5 pt-8 mb-8">
+                    {plan.features.map((feature, fIdx) => (
+                      <li key={fIdx} className="flex items-center gap-3">
+                        <img src={plan.checkIcon} alt="check" className="w-5 h-5 flex-shrink-0" />
+                        <span className="text-[#003049] text-sm font-sans font-medium">
+                          {feature}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Card Footer Button */}
+                <div className="px-6 pb-6">
+                  <a 
+                    href="https://www.talqeeny.com/register"
+                    className={`block w-full py-4 rounded-[15px] text-white font-sans font-bold text-center transition-opacity hover:opacity-90`}
+                    style={{ backgroundColor: index === 0 ? '#29ABE2' : index === 1 ? '#F9BE2F' : '#2CBDB2' }}
+                  >
+                    Choisir ce plan
+                  </a>
+                </div>
               </div>
             ))}
           </div>
-
-          <div className="bg-[#0B414C] p-8 rounded-[30px] text-white h-fit lg:sticky lg:top-24">
-            <h3 className="text-[22px] font-bold mb-6 flex items-center gap-2">
-              <Info className="w-6 h-6 text-[#29BDAD]" />
-              Ce qui est inclus
-            </h3>
-            <ul className="space-y-4 mb-8">
-              {inclusions.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-[15px]">
-                  <Check className="w-5 h-5 text-[#29BDAD] flex-shrink-0 mt-0.5" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="bg-white/10 p-4 rounded-[20px] text-[14px] leading-[1.5]">
-              <p className="font-bold mb-1">Satisfait ou repositionné</p>
-              <p className="opacity-80">Si le groupe ne vous convient pas, nous trouvons une solution ensemble.</p>
-            </div>
-          </div>
         </div>
-
-        <div className="mt-12 bg-[#f0fafb] p-8 rounded-[30px] text-center border-2 border-dashed border-[#29BDAD]/30">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <div className="flex items-center gap-3">
-              <HelpCircle className="w-8 h-8 text-[#29BDAD]" />
-              <p className="text-[#0B414C] font-bold text-[18px]">
-                Besoin d'aide pour choisir ?
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="#pricing"
-                className="text-[#29BDAD] font-bold hover:underline"
-              >
-                Réserver une séance gratuite
-              </a>
-              <span className="text-[#6C757D]">ou</span>
-              <a 
-                href="#test"
-                className="text-[#29BDAD] font-bold hover:underline"
-              >
-                Faites le test de niveau
-              </a>
-            </div>
-          </div>
-        </div>
+      </div>
+      
+      {/* Background Decorative Element (matching one of the shapes from the screenshot) */}
+      <div className="absolute top-[20%] left-[-50px] opacity-20 pointer-events-none">
+        <Image 
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/workProcessShape1_1-13.png"
+          alt="decoration"
+          width={250}
+          height={250}
+          className="animate-pulse"
+        />
       </div>
     </section>
   );
