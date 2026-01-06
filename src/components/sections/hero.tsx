@@ -58,8 +58,8 @@ export default function Hero() {
                 {/* Visual backdrop for the image to match the "abstract shapes" requirement */}
                 <div className="absolute inset-0 bg-white/20 blur-3xl rounded-full scale-110 -z-10"></div>
                 <img 
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/talqeeny_enfant-5.png" 
-                  alt="Enfant heureux avec un livre de Coran"
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/e45c9f35-e52b-4c3b-800c-6b6caddca86c/Untitled-design-57-1767718610959.png?width=8000&height=8000&resize=contain" 
+                  alt="Famille heureuse avec un livre de Coran et logo Talqeeny"
                   width={550}
                   height={550}
                   className="w-full h-auto object-contain drop-shadow-2xl"
