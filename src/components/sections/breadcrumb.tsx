@@ -13,27 +13,27 @@ const Breadcrumb = () => {
         }}
       >
         <div className="container mx-auto max-w-[1200px] px-6 relative">
-          {/* Decorative Shape 1 - Left */}
-          <div className="shape1 absolute left-[-5%] top-1/2 -translate-y-1/2 pointer-events-none hidden md:block">
-            <Image 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png" 
-              alt="shape" 
-              width={150} 
-              height={150}
-              className="animate-pulse"
-            />
-          </div>
+            {/* Decorative Shape 1 - Left */}
+            <div className="shape1 absolute left-[-5%] top-1/2 -translate-y-1/2 pointer-events-none hidden md:block">
+              <Image 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png" 
+                alt="forme" 
+                width={150} 
+                height={150}
+                className="animate-pulse"
+              />
+            </div>
 
-          {/* Decorative Shape 2 - Right */}
-          <div className="shape2 absolute right-[-5%] top-1/2 -translate-y-1/2 pointer-events-none hidden md:block">
-            <Image 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png" 
-              alt="shape" 
-              width={180} 
-              height={180}
-              className="animate-pulse"
-            />
-          </div>
+            {/* Decorative Shape 2 - Right */}
+            <div className="shape2 absolute right-[-5%] top-1/2 -translate-y-1/2 pointer-events-none hidden md:block">
+              <Image 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png" 
+                alt="forme" 
+                width={180} 
+                height={180}
+                className="animate-pulse"
+              />
+            </div>
 
           <div className="breadcumb-wrapper relative z-10 text-center">
             <div className="page-heading">

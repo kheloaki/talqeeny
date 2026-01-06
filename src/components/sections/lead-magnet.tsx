@@ -20,14 +20,14 @@ export default function LeadMagnet() {
             <p className="text-[#5E6266] text-[18px] mb-8 leading-[1.6] font-inter">
               Téléchargez notre guide exclusif : une méthode simple et efficace pour mémoriser et réviser vos sourates sans oublier.
             </p>
-            <ul className="space-y-3 mb-8">
-              {["Planning type", "Astuces de concentration", "Tableau de suivi"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-[#003049] font-bold font-inter">
-                  <Download className="w-5 h-5 text-[#29ABE2]" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+              <ul className="space-y-3 mb-8">
+                {["Exemple de planning", "Astuces de concentration", "Tableau de suivi"].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-[#003049] font-bold font-inter">
+                    <Download className="w-5 h-5 text-[#29ABE2]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
           </div>
 
           <div className="w-full lg:max-w-[450px] bg-white p-8 md:p-10 rounded-[40px] shadow-xl border border-[#29ABE2]/10 relative z-10">

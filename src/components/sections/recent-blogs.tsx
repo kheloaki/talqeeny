@@ -8,7 +8,7 @@ const blogPosts = [
     category: "Islam",
     categoryColor: "#a855f7", // Purple theme from screenshot
     title: "Signification de “Ahhadu Alla Ilaha Illallah” : explication complète, prononciation et enseignement",
-    date: "Jan 03, 2026",
+    date: "3 janv. 2026",
     link: "/blog/signification-ahhadu"
   },
   {
@@ -16,15 +16,15 @@ const blogPosts = [
     category: "Arabe",
     categoryColor: "#29ABE2", // Cyan theme
     title: "Alphabet arabe Alif Ba Ta : guide du débutant",
-    date: "Jan 01, 2026",
+    date: "1 janv. 2026",
     link: "/blog/alphabet-arabe"
   },
   {
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/C28IJBzgrVZu2lUltpoFojLUx5dCjjJEryuIg86q-17.webp",
-    category: "Memorisation",
+    category: "Mémorisation",
     categoryColor: "#a855f7",
     title: "Comment mémoriser le Coran avec un travail à temps plein ?",
-    date: "Dec 30, 2025",
+    date: "30 déc. 2025",
     link: "/blog/memoriser-coran"
   }
 ];

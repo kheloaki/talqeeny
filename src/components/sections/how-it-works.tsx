@@ -5,10 +5,10 @@ const steps = [
     title: "Test de niveau (2 min)",
     description: "Évaluez vos connaissances actuelles via un court test en ligne ou un échange rapide."
   },
-  {
-    title: "Placement + planning",
-    description: "Nous vous attribuons le groupe idéal selon votre niveau et vos disponibilités."
-  },
+    {
+      title: "Placement + planification",
+      description: "Nous vous attribuons le groupe idéal selon votre niveau et vos disponibilités."
+    },
   {
     title: "Cours en direct",
     description: "Participez à vos séances interactives avec pratique guidée et corrections immédiates."

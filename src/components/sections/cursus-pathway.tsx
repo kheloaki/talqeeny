@@ -21,14 +21,14 @@ const CursusPathway = () => {
         {/* Pathway Visualization */}
         <div className="relative max-w-[1100px] mx-auto">
           
-          {/* Decorative Background Curve */}
-          <div className="absolute top-[35%] left-0 w-full h-auto z-0 transform -translate-y-1/2 hidden md:block">
-            <img 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-6-12.png" 
-              alt="Decorative curve" 
-              className="w-full h-auto opacity-40"
-            />
-          </div>
+            {/* Decorative Background Curve */}
+            <div className="absolute top-[35%] left-0 w-full h-auto z-0 transform -translate-y-1/2 hidden md:block">
+              <img 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-6-12.png" 
+                alt="Courbe décorative" 
+                className="w-full h-auto opacity-40"
+              />
+            </div>
 
           {/* Three Cursus Items */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 relative z-10">
