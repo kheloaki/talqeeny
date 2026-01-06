@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { MoveRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 /**
  * Hero component for Talqeeny.
@@ -46,9 +46,9 @@ export default function Hero() {
                     href="#pricing-plans" 
                     className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
                   >
-                    Réserver une séance gratuite
-                    <MoveRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                      Réserver une séance gratuite
+                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
               </div>
             </div>
 

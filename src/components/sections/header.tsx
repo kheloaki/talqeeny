@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { MoveRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -77,7 +77,7 @@ const Header = () => {
                   className="inline-flex items-center justify-center gap-2 bg-[#33C6E5] hover:bg-[#2DB9B0] text-white font-bold text-[16px] px-8 py-3 rounded-full transition-all duration-300 group"
                 >
                   Se connecter
-                  <MoveRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </a>
               </div>
 
@@ -148,7 +148,7 @@ const Header = () => {
               className="flex items-center justify-center gap-2 bg-white text-[#33C6E5] font-bold text-[16px] w-full py-4 rounded-full transition-all duration-300"
             >
               Se connecter
-              <MoveRight className="w-5 h-5" />
+              <ArrowRight className="w-5 h-5" />
             </a>
           </div>
         </div>
