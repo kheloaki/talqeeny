@@ -48,7 +48,7 @@ export default function PourQui() {
 
         <div className="mt-12 text-center">
           <p className="bg-[#0B414C] text-white inline-block px-6 py-2 rounded-full text-[15px] font-semibold">
-            Enfants & adultes — groupes par niveau.
+            Enfants & adultes, groupes par niveau.
           </p>
         </div>
       </div>

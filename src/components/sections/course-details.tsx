@@ -95,7 +95,7 @@ const CourseDetails = () => {
               <div>
                 <strong className="text-[#0B414C] block mb-2">Groupes :</strong>
                 <p className="mb-2">Groupes de 5 élèves, 90 minutes par séance, deux séances par semaine.</p>
-                <p>Cours particuliers 1 élève – 1 Professeur, 60 minutes par séance, deux séances par semaine.</p>
+                <p>Cours particuliers 1 élève / 1 Professeur, 60 minutes par séance, deux séances par semaine.</p>
               </div>
               <ul className="list-disc pl-0 space-y-4">
                 <li>Rappels parents concis, preuve audio en fin de séance si requis.</li>

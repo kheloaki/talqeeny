@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-[#6C757D] text-[18px] md:text-[22px] leading-[1.5] max-w-[800px] mb-10">
-            Apprenez à lire avec tajwîd, corrigez votre récitation et progressez en mémorisation — en direct avec un professeur.
+            Apprenez à lire avec tajwîd, corrigez votre récitation et progressez en mémorisation en direct avec un professeur.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
