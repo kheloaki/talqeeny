@@ -47,15 +47,8 @@ const Breadcrumb = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        .container {
-          width: 100%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      `}</style>
-    </section>
-  );
-};
-
-export default Breadcrumb;
+      </section>
+    );
+  };
+  
+  export default Breadcrumb;
