@@ -41,15 +41,20 @@ export default function Hero() {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-4">
-                  <a 
-                    href="#pricing-plans" 
-                    className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
-                  >
-                      Réserver une séance gratuite
-                      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </a>
-              </div>
+                  <div className="flex flex-col gap-4">
+                    <div className="flex flex-wrap items-center gap-4">
+                      <a 
+                        href="#pricing-plans" 
+                        className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
+                      >
+                          Réserver une séance gratuite
+                          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </div>
+                    <p className="text-[#5E6266] text-sm md:text-base font-medium pl-2">
+                      à partir de 26€ / mois
+                    </p>
+                  </div>
             </div>
 
             {/* Right Image Column */}
