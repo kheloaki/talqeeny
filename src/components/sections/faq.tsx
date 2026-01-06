@@ -122,13 +122,13 @@ export default function FAQ() {
       </div>
 
       <div className="container relative z-10">
-        <div className="max-w-[1240px] mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-[50px]">
-            <h2 className="font-display font-bold text-[40px] text-[#003049] mb-4 tracking-tight">
-              FAQ
-            </h2>
-          </div>
+          <div className="max-w-[1240px] mx-auto">
+            {/* Section Header */}
+            <div className="text-center mb-[50px]">
+              <h2 className="font-display font-bold text-[32px] md:text-[40px] text-[#003049] mb-4 tracking-tight">
+                FAQ
+              </h2>
+            </div>
 
           {/* Accordion Grid */}
           <div className="row flex flex-wrap -mx-4">
@@ -164,22 +164,6 @@ export default function FAQ() {
         </div>
       </div>
 
-      {/* Responsive Styles for Rounded Section */}
-      <style jsx global>{`
-        .container {
-          width: 100%;
-          max-width: 1320px;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
-        }
-        @media (max-width: 1200px) {
-          h2.font-display {
-            font-size: 32px;
-          }
-        }
-      `}</style>
-    </section>
-  );
+      </section>
+    );
 }

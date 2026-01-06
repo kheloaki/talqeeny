@@ -114,12 +114,6 @@ const CursusPathway = () => {
            </svg>
         </div>
       </div>
-
-      <style jsx global>{`
-        .shadow-soft-ui {
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-        }
-      `}</style>
     </section>
   );
 };
