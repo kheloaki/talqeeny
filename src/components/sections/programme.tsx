@@ -2,13 +2,13 @@ import React from 'react';
 import { Ear, Music, Wind, Zap, Target, BookOpen, Sun, LineChart } from 'lucide-react';
 
 const items = [
-  { icon: Ear, text: "Makhârij (prononciation précise)" },
-  { icon: Zap, text: "Règles de tajwîd (application pratique)" },
-  { icon: Wind, text: "Fluidité, rythme et arrêts" },
-  { icon: Target, text: "Correction en direct des erreurs fréquentes" },
-  { icon: BookOpen, text: "Plan de mémorisation + révisions" },
-  { icon: Sun, text: "Autonomie (routine simple et efficace)" },
-  { icon: Music, text: "Motivation et régularité" },
+  { icon: Ear, text: "Prononciation précise (Makharij)" },
+  { icon: Zap, text: "Règles de tajwid (théorie & pratique)" },
+  { icon: Wind, text: "Récitation du Coran fluide" },
+  { icon: Target, text: "Correction immédiate des erreurs" },
+  { icon: BookOpen, text: "Mémoriser le Coran (Hifz)" },
+  { icon: Sun, text: "Qaida Nourania pas à pas" },
+  { icon: Music, text: "Arabe coranique (Vocabulaire)" },
   { icon: LineChart, text: "Suivi rigoureux des progrès" }
 ];
 
@@ -25,7 +25,7 @@ export default function Programme() {
               Ce que vous allez apprendre
             </h2>
             <p className="text-white/80 text-[18px] max-w-[700px] mx-auto font-inter">
-              Un programme complet pour transformer votre relation avec le Coran.
+              Un programme complet pour maîtriser les règles de tajwid et la récitation du Coran en ligne.
             </p>
           </div>
 

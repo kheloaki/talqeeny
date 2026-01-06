@@ -2,15 +2,15 @@ import React from 'react';
 import { ShieldCheck, Lock, Headphones, RefreshCw } from 'lucide-react';
 
 const guarantees = [
-  { icon: ShieldCheck, text: "Placement au bon niveau" },
+  { icon: ShieldCheck, text: "Groupes par niveau" },
+  { icon: RefreshCw, text: "Suivi personnalisé" },
   { icon: Lock, text: "Paiement sécurisé" },
-  { icon: Headphones, text: "Support rapide" },
-  { icon: RefreshCw, text: "Flexibilité garantie" }
+  { icon: Headphones, text: "Support réactif 6j/7" }
 ];
 
 export default function Guarantees() {
   return (
-    <section id="reassurance" className="py-12 bg-[#003049]">
+    <section id="rassurance" className="py-12 bg-[#003049]">
       <div className="container px-6 mx-auto max-w-[1240px]">
         <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-8 gap-x-12">
           {guarantees.map((item, idx) => (

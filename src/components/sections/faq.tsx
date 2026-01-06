@@ -7,28 +7,64 @@ import { cn } from "@/lib/utils";
 
 const faqData = [
   {
-    question: "Qu’est-ce que le Cursus Talqeen Coran ?",
-    answer: "C'est un programme de mémorisation en direct où l'élève apprend et révise ses sourates pendant la séance live avec le professeur, minimisant ainsi le travail solitaire à la maison."
+    question: "Comment apprendre le Coran en ligne avec votre plateforme ?",
+    answer: "Notre plateforme propose des cours en direct avec des professeurs expérimentés. Vous vous connectez à l'heure prévue, et la séance se déroule en visioconférence pour une interaction maximale et une correction immédiate."
   },
   {
-    question: "Est-ce adapté aux enfants et aux adultes ?",
-    answer: "Oui, nous avons des groupes séparés pour les enfants (à partir de 5 ans) et pour les adultes. La pédagogie est adaptée à chaque public."
+    question: "Est-ce adapté aux adultes débutants ?",
+    answer: "Absolument. Nous avons des programmes spécifiquement conçus pour les adultes qui souhaitent apprendre à lire le Coran ou mémoriser à leur rythme, sans pression et avec bienveillance."
+  },
+  {
+    question: "Comment apprendre à lire le Coran ?",
+    answer: "Nous utilisons principalement la méthode Nourania. C'est une approche progressive qui permet de maîtriser la prononciation correcte des lettres (Makharij) et d'entrer rapidement dans la lecture des mots et des versets."
+  },
+  {
+    question: "Qu'est-ce que la Qaida Nourania ?",
+    answer: "La Qaida Nourania est une méthode d'apprentissage de la lecture de l'arabe et du Coran. Elle est célèbre pour son efficacité à enseigner les règles de tajwid dès les premières étapes de l'apprentissage."
+  },
+  {
+    question: "La méthode Nourania, c'est pour qui ?",
+    answer: "Elle est universelle. Que vous soyez un enfant ou un adulte débutant, la méthode Nourania est idéale pour poser des bases de lecture solides et précises."
+  },
+  {
+    question: "Comment corriger les règles de tajwid ?",
+    answer: "Lors de chaque séance, le professeur écoute votre récitation du Coran et corrige en direct vos erreurs. Vous apprenez les règles de tajwid théoriques et leur application pratique simultanément."
+  },
+  {
+    question: "Comment mémoriser le Coran et réviser sans oublier ?",
+    answer: "Nous intégrons des techniques de mémorisation (Hifz) éprouvées et un planning de révision structuré. L'essentiel de l'ancrage se fait en direct avec le professeur pour garantir une mémorisation durable."
   },
   {
     question: "Quel est le nombre d'élèves par groupe ?",
     answer: "Nous limitons nos groupes à 5 élèves maximum pour garantir un temps de parole et une correction individuelle optimale pour chacun."
   },
   {
-    question: "Faut-il déjà savoir lire l'arabe ?",
-    answer: "Il est préférable d'avoir des bases en lecture, mais nous proposons aussi le cursus Nourania pour ceux qui souhaitent apprendre à lire avant de mémoriser."
+    question: "Proposez-vous des cours d'arabe coranique ?",
+    answer: "Oui, notre cursus inclut des notions d'arabe coranique pour vous aider à comprendre le sens des versets que vous récitez et mémorisez."
   },
   {
-    question: "Comment se déroule une séance type ?",
-    answer: "Une séance de 90 min (groupe) comprend : révision des acquis, apprentissage du nouveau passage, application du Tajwid et activités d'ancrage."
+    question: "Quels sont les horaires des cours ?",
+    answer: "Nous proposons une large gamme d'horaires, en semaine et le week-end, pour s'adapter à votre emploi du temps professionnel ou scolaire."
   },
   {
-    question: "Proposez-vous des cours particuliers ?",
-    answer: "Oui, les plans Othmane Ibn Affane et Imame Nafii sont des formats individuels (1 élève / 1 professeur) pour une progression sur mesure."
+    question: "De quel matériel ai-je besoin ?",
+    answer: "Une simple connexion internet, un ordinateur ou une tablette, et un casque avec micro suffisent pour suivre vos cours de Coran en ligne dans de bonnes conditions."
+  },
+  {
+    question: "Puis-je choisir entre groupe et individuel ?",
+    answer: "Oui, nous proposons des formats en petits groupes pour l'émulation, ou des cours particuliers pour une attention 100% personnalisée."
+  },
+  {
+    question: "Est-il possible de faire une séance d'essai ?",
+    answer: "Oui, vous pouvez réserver une séance gratuite pour découvrir notre méthode, rencontrer un professeur et évaluer votre niveau."
+  },
+  {
+    question: "Comment se déroule le test de niveau ?",
+    answer: "Le test de niveau dure environ 2 minutes et permet de vous placer dans le groupe le plus adapté à vos compétences actuelles en récitation du Coran."
+  },
+  {
+    question: "La lecture du Coran pendant le Ramadan est-elle abordée ?",
+    answer: "Oui, nous proposons des accompagnements spécifiques pour vous préparer à la lecture du Coran lors du Ramadan et intensifier votre lien avec le Livre Sacré."
   }
 ];
 

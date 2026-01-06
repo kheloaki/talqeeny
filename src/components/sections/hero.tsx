@@ -34,25 +34,54 @@ export default function Hero() {
             <div className="lg:col-span-7 space-y-8">
               <div className="max-w-2xl">
                   <h1 className="text-[40px] md:text-[54px] font-bold text-[#003049] leading-[1.1] mb-6 font-poppins">
-                    Cursus Talqeen Coran (Mémorisation)
+                    Cours de Coran en ligne : Apprenez, Récitez et Mémorisez
                   </h1>
-                  <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter">
-                    On gère la mémorisation, vous retrouvez la sérénité ! Nous plaçons la mémorisation et sa consolidation au cœur de la séance live. Idéal pour enfants et adultes.
+                  <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter mb-6">
+                    Rejoignez une communauté passionnée et progressez sereinement dans votre apprentissage du Coran. Professeurs certifiés, pédagogie adaptée et suivi personnalisé pour tous les niveaux.
                   </p>
+                  <ul className="space-y-3 mb-8">
+                    <li className="flex items-center gap-2 text-[#5E6266] font-inter">
+                      <div className="w-5 h-5 rounded-full bg-[#29ABE2]/10 flex items-center justify-center">
+                        <div className="w-2 h-2 rounded-full bg-[#29ABE2]"></div>
+                      </div>
+                      Professeurs certifiés et expérimentés
+                    </li>
+                    <li className="flex items-center gap-2 text-[#5E6266] font-inter">
+                      <div className="w-5 h-5 rounded-full bg-[#29ABE2]/10 flex items-center justify-center">
+                        <div className="w-2 h-2 rounded-full bg-[#29ABE2]"></div>
+                      </div>
+                      Groupes ultra-réduits ou cours individuels
+                    </li>
+                    <li className="flex items-center gap-2 text-[#5E6266] font-inter">
+                      <div className="w-5 h-5 rounded-full bg-[#29ABE2]/10 flex items-center justify-center">
+                        <div className="w-2 h-2 rounded-full bg-[#29ABE2]"></div>
+                      </div>
+                      Horaires flexibles adaptés à votre emploi du temps
+                    </li>
+                  </ul>
                 </div>
 
-                  <div className="flex flex-col gap-4">
-                    <div className="flex flex-wrap items-center gap-4">
-                      <a 
-                        href="#pricing-plans" 
-                        className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
-                      >
-                          Réserver une séance gratuite
-                          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                    </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a 
+                      href="#pricing-plans" 
+                      className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
+                    >
+                        Réserver une séance gratuite
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                    <a 
+                      href="#how-it-works" 
+                      className="inline-flex items-center justify-center gap-3 bg-white border-2 border-[#29ABE2] text-[#29ABE2] hover:bg-[#F0FAFB] px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 font-inter"
+                    >
+                        Faire le test de niveau (2 min)
+                    </a>
+                  </div>
+                  <div className="flex flex-col gap-2 mt-4">
                     <p className="text-[#5E6266] text-sm md:text-base font-medium pl-2">
                       à partir de 26€ / mois
+                    </p>
+                    <p className="text-[#5E6266]/70 text-[13px] italic pl-2">
+                      Idéal pour débutants : commencez votre voyage spirituel dès aujourd'hui.
                     </p>
                   </div>
             </div>

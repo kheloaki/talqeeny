@@ -2,12 +2,12 @@ import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
 const objectives = [
-  { title: "Lire avec fluidité", outcome: "Finissez-en avec les hésitations et les blocages lors de la lecture." },
-  { title: "Appliquer les règles de tajwîd", outcome: "Maîtrisez les règles essentielles pour une récitation conforme." },
-  { title: "Améliorer la prononciation (makhârij)", outcome: "Prononcez chaque lettre correctement pour préserver le sens." },
-  { title: "Rendre la mémorisation régulière", outcome: "Instaurez une routine solide pour avancer pas à pas." },
-  { title: "Réviser sans oublier", outcome: "Apprenez des méthodes pour stabiliser vos acquis durablement." },
-  { title: "Gagner en confiance", outcome: "Sentez-vous à l'aise lors de votre récitation, seul ou devant les autres." }
+  { title: "Lire le Coran avec fluidité", outcome: "Finissez-en avec les hésitations et les blocages grâce à la méthode Nourania." },
+  { title: "Maîtriser les règles de tajwid", outcome: "Apprenez et appliquez les règles de tajwid essentielles pour une récitation conforme." },
+  { title: "Prononciation (Makharij)", outcome: "Prononcez chaque lettre correctement pour préserver le sens sacré des versets." },
+  { title: "Mémoriser le Coran (Hifz)", outcome: "Instaurez une routine solide pour avancer pas à pas dans votre mémorisation." },
+  { title: "Réviser sans oublier", outcome: "Utilisez des méthodes d'ancrage pour stabiliser vos acquis durablement." },
+  { title: "Arabe coranique", outcome: "Commencez à comprendre le sens des mots que vous récitez au quotidien." }
 ];
 
 export default function Objectifs() {
@@ -19,7 +19,7 @@ export default function Objectifs() {
             Vos Objectifs de Progression
           </h2>
           <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
-            Nous vous accompagnons pour atteindre des résultats concrets et durables.
+            Nous vous accompagnons pour atteindre des résultats concrets et durables dans votre apprentissage du Coran en ligne.
           </p>
         </div>
 

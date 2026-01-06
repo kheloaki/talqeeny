@@ -74,10 +74,10 @@ const PricingPlans = () => {
             {/* Section Header */}
             <div className="max-w-[800px] mx-auto mb-[60px]">
               <h2 className="text-white font-display text-[2.5rem] md:text-[3rem] font-bold leading-[1.2] mb-6">
-                Mémorisez le Coran à votre rythme !
+                Tarifs de nos cours de Coran
               </h2>
               <p className="text-white/90 font-sans text-lg opacity-90">
-                Choisissez le plan qui correspond à vos objectifs et rejoignez notre cursus dès aujourd'hui.
+                Des formules accessibles pour apprendre le Coran en ligne, maîtriser le tajwid ou mémoriser à votre rythme. Sans engagement.
               </p>
             </div>
 

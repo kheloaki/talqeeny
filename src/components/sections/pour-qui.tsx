@@ -5,17 +5,17 @@ const targets = [
   {
     icon: BookOpen,
     title: "Débutant (Lecture)",
-    description: "Vous commencez de zéro, ou vous bloquez encore en lisant les mots simples. Nous reprenons les bases ensemble."
+    description: "Apprendre à lire le Coran en partant de zéro. Nous utilisons la méthode Nourania pour vous donner des bases solides rapidement."
   },
   {
     icon: Headphones,
-    title: "Intermédiaire (Tajwîd)",
-    description: "Vous lisez déjà, mais avec des erreurs à corriger. Apprenez à appliquer les règles pour une récitation parfaite."
+    title: "Intermédiaire (Tajwid)",
+    description: "Maîtrisez les règles de tajwid pour une récitation du Coran fluide et correcte. Idéal pour ceux qui lisent déjà mais veulent se perfectionner."
   },
   {
     icon: Trophy,
     title: "Mémorisation (Hifz)",
-    description: "Vous voulez mémoriser de nouvelles sourates et réviser les anciennes avec une méthode structurée et motivante."
+    description: "Mémoriser le Coran avec une méthodologie structurée. Progressez dans votre hifz avec un suivi rigoureux et des révisions constantes."
   }
 ];
 
@@ -26,10 +26,10 @@ export default function PourQui() {
         <div className="bg-[#F0FAFB] rounded-[40px] md:rounded-[60px] p-8 md:p-16">
           <div className="text-center mb-16">
             <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
-              Pour qui est ce cursus ?
+              À qui s'adressent nos cours de Coran en ligne ?
             </h2>
             <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
-              Que vous soyez au début de votre apprentissage ou en phase de perfectionnement.
+              Une pédagogie adaptée à chaque profil pour garantir une progression optimale et sereine.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function PourQui() {
 
           <div className="mt-12 text-center">
             <p className="bg-[#003049] text-white inline-block px-6 py-2 rounded-full text-[15px] font-semibold font-inter">
-              Enfants & adultes, groupes par niveau.
+              Tous niveaux bienvenus, groupes homogènes par compétences.
             </p>
           </div>
         </div>

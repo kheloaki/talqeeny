@@ -5,17 +5,17 @@ const results = [
   {
     icon: TrendingUp,
     title: "Lecture plus fluide",
-    description: "La majorité de nos élèves constatent une amélioration nette de leur fluidité en seulement quelques semaines."
+    description: "La majorité de nos élèves constatent une amélioration nette de leur fluidité en récitation du Coran dès le premier mois."
   },
   {
     icon: Award,
     title: "Moins d'erreurs",
-    description: "Grâce à la correction immédiate, les erreurs de prononciation récurrentes s'effacent progressivement."
+    description: "Grâce à la correction immédiate, les erreurs de prononciation et les fautes de tajwid s'effacent progressivement."
   },
   {
     icon: Clock,
-    title: "Routine stabilisée",
-    description: "Nos élèves parviennent à instaurer une routine de mémorisation et de révision régulière et durable."
+    title: "Routine de Hifz stabilisée",
+    description: "Nos élèves parviennent à mémoriser le Coran sereinement en instaurant une routine de révision régulière et durable."
   }
 ];
 
@@ -25,10 +25,10 @@ export default function Results() {
       <div className="container px-6 mx-auto max-w-[1240px]">
         <div className="text-center mb-16">
           <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
-            Ce que nos élèves constatent
+            Preuve de progression : Ce que nos élèves constatent
           </h2>
           <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
-            Des progrès visibles et une motivation renouvelée au fil des séances.
+            Des progrès visibles et une motivation renouvelée au fil des séances de Coran en ligne.
           </p>
         </div>
 

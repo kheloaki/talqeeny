@@ -3,32 +3,32 @@ import React from 'react';
 const steps = [
   {
     title: "Test de niveau (2 min)",
-    description: "Évaluez vos connaissances actuelles via un court test en ligne ou un échange rapide."
+    description: "Évaluez vos connaissances actuelles en 2 minutes pour trouver le parcours le plus adapté à vos besoins."
   },
-    {
-      title: "Placement + planification",
-      description: "Nous vous attribuons le groupe idéal selon votre niveau et vos disponibilités."
-    },
+  {
+    title: "Placement",
+    description: "Nous vous intégrons dans un groupe homogène ou vous attribuons un professeur pour vos cours individuels."
+  },
   {
     title: "Cours en direct",
-    description: "Participez à vos séances interactives avec pratique guidée et corrections immédiates."
+    description: "Participez à vos séances interactives en ligne avec une correction immédiate de votre récitation du Coran."
   },
   {
-    title: "Suivi + bilan",
-    description: "Recevez des bilans réguliers sur votre progression et vos points d'amélioration."
+    title: "Suivi personnalisé",
+    description: "Suivez vos progrès en temps réel et recevez des bilans réguliers pour valider chaque étape de votre apprentissage."
   }
 ];
 
 export default function HowItWorks() {
   return (
-    <section id="comment-ca-se-passe" className="py-20 bg-white">
+    <section id="how-it-works" className="py-20 bg-white">
       <div className="container px-6 mx-auto max-w-[1240px]">
         <div className="text-center mb-16">
           <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
             Comment ça se passe ?
           </h2>
           <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
-            Un processus simple et transparent pour commencer votre apprentissage.
+            Un processus simple et transparent pour commencer votre apprentissage du Coran en ligne.
           </p>
         </div>
 

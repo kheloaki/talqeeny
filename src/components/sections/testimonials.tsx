@@ -5,39 +5,39 @@ import { Quote, Star } from 'lucide-react';
 
 const allTestimonials = [
   {
-    name: "Sarah",
-    role: "Maman d'élève",
-    content: "Méthode claire pour francophones, j'ai enfin stabilisé ma lecture. Ma fille progresse chaque semaine avec plaisir.",
-    rating: 5
-  },
-  {
-    name: "Omar",
+    name: "Ahmed",
     role: "Adulte débutant",
-    content: "Le tajwîd est corrigé en direct, ça change tout. Le professeur est très patient et pédagogue.",
+    content: "Une méthode incroyable, j'ai enfin appris à lire avec la méthode Nourania. Les cours en ligne sont très pratiques.",
     rating: 5
   },
   {
-    name: "Khadija",
-    role: "Étudiante",
-    content: "Suivi de mémorisation très motivant. Les séances sont bien structurées et m'aident à rester régulière.",
+    name: "Sofia",
+    role: "Parent d'élève",
+    content: "Mes enfants adorent leurs cours de Coran en ligne, ils progressent sans s'en rendre compte grâce à la bienveillance des profs.",
     rating: 5
   },
   {
     name: "Yassine",
-    role: "Parent",
-    content: "Enfin une plateforme qui comprend les besoins des francophones. Le vocabulaire est adapté et les explications limpides.",
+    role: "Étudiant",
+    content: "La correction des règles de tajwid est très précise, je sens vraiment la différence dans ma récitation du Coran.",
     rating: 5
   },
   {
-    name: "Amira",
+    name: "Leila",
     role: "Adulte",
-    content: "J'avais peur de commencer tard mais l'accompagnement est top. Je lis mes premières sourates avec fluidité maintenant.",
+    content: "Le suivi mémoriser le coran (Hifz) m'aide à rester motivée et régulière dans mon apprentissage quotidien.",
     rating: 5
   },
   {
-    name: "Ibrahim",
-    role: "Père de famille",
-    content: "Mes enfants adorent leurs cours. Ils attendent le moment de la séance avec impatience. Je recommande vivement.",
+    name: "Karim",
+    role: "Adulte débutant",
+    content: "Professeurs très pédagogues et patients avec les débutants. Je recommande pour apprendre à lire le Coran.",
+    rating: 5
+  },
+  {
+    name: "Mariam",
+    role: "Parent d'élève",
+    content: "La plateforme est simple et les cours en direct sont très interactifs. Un vrai bonheur pour toute la famille.",
     rating: 5
   }
 ];
