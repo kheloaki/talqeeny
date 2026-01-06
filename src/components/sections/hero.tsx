@@ -33,22 +33,22 @@ export default function Hero() {
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-8">
               <div className="max-w-2xl">
-                <h1 className="text-[40px] md:text-[54px] font-bold text-[#003049] leading-[1.1] mb-6 font-poppins">
-                  Ils apprennent… et vous respirez !
-                </h1>
-                <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter">
-                  Talqeeny est la plateforme en ligne qui aide vos enfants à progresser réellement dans l’apprentissage du Coran et de l’arabe, pendant la séance live, avec un accompagnement léger des parents. Groupes réduits, rituels simples, résultats visibles.
-                </p>
-              </div>
+                  <h1 className="text-[40px] md:text-[54px] font-bold text-[#003049] leading-[1.1] mb-6 font-poppins">
+                    Cursus Talqeen Coran (Mémorisation)
+                  </h1>
+                  <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter">
+                    On gère la mémorisation, vous retrouvez la sérénité ! Nous plaçons la mémorisation et sa consolidation au cœur de la séance live. Idéal pour enfants et adultes.
+                  </p>
+                </div>
 
-              <div className="flex flex-wrap gap-4">
-                <a 
-                  href="https://www.talqeeny.com/register" 
-                  className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
-                >
-                  Réserver une séance gratuite
-                  <MoveRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </a>
+                <div className="flex flex-wrap gap-4">
+                  <a 
+                    href="#pricing-plans" 
+                    className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group"
+                  >
+                    Réserver une séance gratuite
+                    <MoveRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </a>
               </div>
             </div>
 

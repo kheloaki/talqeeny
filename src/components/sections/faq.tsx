@@ -7,44 +7,28 @@ import { cn } from "@/lib/utils";
 
 const faqData = [
   {
-    question: "Qu’est-ce que Talqeeny ?",
-    answer: "Talqeeny est une plateforme d'apprentissage en ligne innovante dédiée à l'enseignement du Coran et de la langue arabe pour les enfants. Notre approche unique se concentre sur l'apprentissage actif pendant les séances en direct."
+    question: "Qu’est-ce que le Cursus Talqeen Coran ?",
+    answer: "C'est un programme de mémorisation en direct où l'élève apprend et révise ses sourates pendant la séance live avec le professeur, minimisant ainsi le travail solitaire à la maison."
   },
   {
-    question: "Quelle est votre expérience dans l’enseignement ?",
-    answer: "Nos enseignants sont sélectionnés pour leur expertise pédagogique et leur expérience avec le jeune public. Nous utilisons des méthodes modernes adaptées psychologiquement aux enfants."
+    question: "Est-ce adapté aux enfants et aux adultes ?",
+    answer: "Oui, nous avons des groupes séparés pour les enfants (à partir de 5 ans) et pour les adultes. La pédagogie est adaptée à chaque public."
   },
   {
-    question: "À partir de quel âge mon enfant peut-il s’inscrire ?",
-    answer: "Nos programmes sont conçus pour les enfants âgés de 4 à 15 ans, avec des cursus adaptés à chaque tranche d'âge et niveau de maturité."
+    question: "Quel est le nombre d'élèves par groupe ?",
+    answer: "Nous limitons nos groupes à 5 élèves maximum pour garantir un temps de parole et une correction individuelle optimale pour chacun."
   },
   {
-    question: "Quelle est la différence entre Talqeeny et les autres instituts ?",
-    answer: "Contrairement aux instituts classiques, Talqeeny déplace l'effort de mémorisation au cœur de la séance live. L'enfant n'est pas seul face à ses devoirs à la maison."
+    question: "Faut-il déjà savoir lire l'arabe ?",
+    answer: "Il est préférable d'avoir des bases en lecture, mais nous proposons aussi le cursus Nourania pour ceux qui souhaitent apprendre à lire avant de mémoriser."
   },
   {
-    question: "Comment se déroulent les cours ?",
-    answer: "Les cours se déroulent en petits groupes via notre plateforme interactive. Chaque séance combine apprentissage théorique, pratique ludique et moments de mémorisation guidée."
+    question: "Comment se déroule une séance type ?",
+    answer: "Une séance de 90 min (groupe) comprend : révision des acquis, apprentissage du nouveau passage, application du Tajwid et activités d'ancrage."
   },
   {
-    question: "Quels sont les cursus proposés ?",
-    answer: "Nous proposons trois cursus principaux : Arabe (lecture et expression), Nourania (phonétique et règles de lecture) et Coran (mémorisation et Tajwid)."
-  },
-  {
-    question: "Comment savoir si mon enfant progresse ?",
-    answer: "Nous assurons un suivi régulier avec des évaluations continues. Les parents reçoivent des rapports de progression et peuvent visualiser les résultats via notre interface dédiée."
-  },
-  {
-    question: "Dois-je aider mon enfant à la maison ?",
-    answer: "L'objectif de Talqeeny est d'alléger la charge des parents. Un accompagnement très léger suffit, car l'essentiel du travail est réalisé avec le professeur."
-  },
-  {
-    question: "Quels sont les tarifs ?",
-    answer: "Nous proposons différentes formules adaptées à vos besoins, avec des options de paiement mensuelles ou annuelles très compétitives."
-  },
-  {
-    question: "Qui sont les professeurs Talqeeny ?",
-    answer: "Nos professeurs sont des experts bilingues passionnés par la transmission, formés spécifiquement à la méthode Talqeeny pour garantir une expérience bienveillante et efficace."
+    question: "Proposez-vous des cours particuliers ?",
+    answer: "Oui, les plans Othmane Ibn Affane et Imame Nafii sont des formats individuels (1 élève / 1 professeur) pour une progression sur mesure."
   }
 ];
 

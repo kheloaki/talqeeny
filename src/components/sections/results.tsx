@@ -24,22 +24,22 @@ export default function Results() {
     <section id="resultats" className="py-20 bg-white">
       <div className="container px-6 mx-auto max-w-[1240px]">
         <div className="text-center mb-16">
-          <h2 className="text-[#0B414C] text-[32px] md:text-[42px] font-extrabold mb-4">
+          <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
             Ce que nos élèves constatent
           </h2>
-          <p className="text-[#6C757D] text-[18px] max-w-[700px] mx-auto">
+          <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
             Des progrès visibles et une motivation renouvelée au fil des séances.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {results.map((result, idx) => (
-            <div key={idx} className="bg-[#f0fafb] p-10 rounded-[30px] text-center flex flex-col items-center">
-              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-sm">
-                <result.icon className="w-8 h-8 text-[#29BDAD]" />
+            <div key={idx} className="bg-[#F0FAFB] p-10 rounded-[40px] text-center flex flex-col items-center border border-transparent hover:border-[#29ABE2]/30 transition-all group shadow-sm">
+              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                <result.icon className="w-8 h-8 text-[#29ABE2]" />
               </div>
-              <h3 className="text-[#0B414C] text-[22px] font-bold mb-4">{result.title}</h3>
-              <p className="text-[#6C757D] text-[16px] leading-[1.6]">
+              <h3 className="text-[#003049] text-[22px] font-bold mb-4 font-poppins">{result.title}</h3>
+              <p className="text-[#5E6266] text-[16px] leading-[1.6] font-inter">
                 {result.description}
               </p>
             </div>

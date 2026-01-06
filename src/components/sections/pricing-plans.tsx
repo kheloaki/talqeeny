@@ -2,72 +2,73 @@ import React from 'react';
 import Image from 'next/image';
 
 const PricingPlans = () => {
-  const plans = [
-    {
-      title: "Arabe",
-      price: "24€",
-      period: "/ mois",
-      yearlyInfo: "Soit l’équivalent de 289€ / an",
-      features: [
-        "Lire et écrire",
-        "S'exprimer avec confiance",
-        "Progresser en jouant"
-      ],
-      bgColor: "bg-[#D9F2F7]", // Light Blue
-      buttonBg: "bg-[#29ABE2]",
-      textColor: "text-[#003049]",
-      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
-    },
-    {
-      title: "Nourania",
-      price: "63€",
-      period: "/ mois",
-      yearlyInfo: "Soit l’équivalent de 189 € / 3 mois",
-      features: [
-        "Lire le Coran correctement",
-        "Découvrir le tajwid simplement",
-        "Gagner en fluidité"
-      ],
-      bgColor: "bg-[#FFF4E0]", // Light Yellow/Beige
-      buttonBg: "#F9BE2F",
-      textColor: "text-[#003049]",
-      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon1.svg"
-    },
-    {
-      title: "Coran",
-      price: "26€",
-      period: "/ mois",
-      yearlyInfo: "Soit l’équivalent de 309€ / an",
-      features: [
-        "Mémoriser en direct en séance",
-        "Intégrer le tajwid naturellement",
-        "Progresser sans stress à la maison"
-      ],
-      bgColor: "bg-[#E0F2F1]", // Light Green/Teal
-      buttonBg: "#2CBDB2",
-      textColor: "text-[#003049]",
-      checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon3.svg"
-    }
-  ];
+    const plans = [
+      {
+        title: "Abou Bakr Assidiq",
+        price: "41€",
+        period: "/ mois",
+        yearlyInfo: "Soit l’équivalent de 489€ / an",
+        features: [
+          "Apprentissage en Groupe",
+          "2 Séances par semaine",
+          "Mercredi 15:00 & Samedi 09:00"
+        ],
+        bgColor: "bg-[#D9F2F7]", // Light Blue
+        buttonBg: "bg-[#29ABE2]",
+        textColor: "text-[#003049]",
+        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
+      },
+      {
+        title: "Omar Al Farouq",
+        price: "26€",
+        period: "/ mois",
+        yearlyInfo: "Soit l’équivalent de 309€ / an",
+        features: [
+          "Apprentissage en Groupe",
+          "1 Séance par semaine",
+          "Vendredi 18:00 (UTC+1)"
+        ],
+        bgColor: "bg-[#FFF4E0]", // Light Yellow/Beige
+        buttonBg: "#F9BE2F",
+        textColor: "text-[#003049]",
+        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon1.svg"
+      },
+      {
+        title: "Othmane Ibn Affane",
+        price: "59€",
+        period: "/ mois",
+        yearlyInfo: "Soit l’équivalent de 355€ / 6 mois",
+        features: [
+          "Apprentissage Individuel",
+          "1 Séance par semaine",
+          "Dimanche 18:30 (UTC+1)"
+        ],
+        bgColor: "bg-[#E0F2F1]", // Light Green/Teal
+        buttonBg: "#2CBDB2",
+        textColor: "text-[#003049]",
+        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon3.svg"
+      }
+    ];
 
-  return (
-    <section className="pricing-section py-[100px] relative overflow-hidden">
-      <div className="container px-4">
-        {/* Main Background Container */}
-        <div className="bg-[#E6643C] rounded-[40px] pt-[80px] pb-[100px] relative px-6 md:px-12 text-center text-white">
-          
-          {/* Section Header */}
-          <div className="max-w-[800px] mx-auto mb-[60px]">
-            <h2 className="text-white font-display text-[2.5rem] md:text-[3rem] font-bold leading-[1.2] mb-6">
-              Ouvrez à votre enfant les portes du Coran et de l’arabe !
-            </h2>
-            <p className="text-white/90 font-sans text-lg opacity-90">
-              Choisissez le cursus qui transformera son apprentissage en une réussite certaine.
-            </p>
-          </div>
+    return (
+      <section id="pricing-plans" className="pricing-section py-[100px] relative overflow-hidden">
+        <div className="container px-4">
+          {/* Main Background Container */}
+          <div className="bg-[#29ABE2] rounded-[40px] pt-[80px] pb-[100px] relative px-6 md:px-12 text-center text-white shadow-xl">
+            
+            {/* Section Header */}
+            <div className="max-w-[800px] mx-auto mb-[60px]">
+              <h2 className="text-white font-display text-[2.5rem] md:text-[3rem] font-bold leading-[1.2] mb-6">
+                Mémorisez le Coran à votre rythme !
+              </h2>
+              <p className="text-white/90 font-sans text-lg opacity-90">
+                Choisissez le plan qui correspond à vos objectifs et rejoignez notre cursus dès aujourd'hui.
+              </p>
+            </div>
 
-          {/* Pricing Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto translate-y-[15%] md:translate-y-[25%]">
+            {/* Pricing Cards Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto translate-y-[15%] md:translate-y-[25%]">
+
             {plans.map((plan, index) => (
               <div 
                 key={index} 

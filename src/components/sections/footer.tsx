@@ -47,21 +47,27 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Pages Links */}
-          <div className="lg:pl-12">
-            <h4 className="text-[20px] font-bold text-[#003049] mb-8 font-display relative after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-10 after:h-[2px] after:bg-[#29ABE2]">
-              Pages
-            </h4>
-            <ul className="space-y-4">
-              {['Accueil', 'Arabe', 'Nourania', 'Coran', 'Qui Sommes-Nous', 'Contactez-Nous'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-[#5E6266] hover:text-[#29ABE2] transition-colors font-medium text-[15px] font-inter">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Pages Links */}
+            <div className="lg:pl-12">
+              <h4 className="text-[20px] font-bold text-[#003049] mb-8 font-display relative after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-10 after:h-[2px] after:bg-[#29ABE2]">
+                Navigation
+              </h4>
+              <ul className="space-y-4">
+                {[
+                  { name: 'Pour qui ?', href: '#pour-qui' },
+                  { name: 'Programme', href: '#programme' },
+                  { name: 'Niveaux', href: '#niveaux' },
+                  { name: 'Tarifs', href: '#pricing-plans' },
+                  { name: 'FAQ', href: '#faq' }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <a href={item.href} className="text-[#5E6266] hover:text-[#29ABE2] transition-colors font-medium text-[15px] font-inter">
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
           {/* Util Links */}
           <div className="lg:pl-8">

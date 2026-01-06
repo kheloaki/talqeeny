@@ -20,13 +20,13 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Accueil', href: 'https://www.talqeeny.com' },
-    { name: 'Arabe', href: '/course/arabic' },
-    { name: 'Nourania', href: '/course/nouraniya' },
-    { name: 'Coran', href: '/course/coran' },
-    { name: 'Contactez-nous', href: 'https://www.talqeeny.com/contact-us' },
-  ];
+    const navLinks = [
+      { name: 'Pour qui ?', href: '#pour-qui' },
+      { name: 'Programme', href: '#programme' },
+      { name: 'Niveaux', href: '#niveaux' },
+      { name: 'Tarifs', href: '#pricing-plans' },
+      { name: 'FAQ', href: '#faq' },
+    ];
 
   return (
     <>
