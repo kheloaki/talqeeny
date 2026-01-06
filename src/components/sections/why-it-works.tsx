@@ -82,9 +82,9 @@ const WhyItWorksSection: React.FC = () => {
                   controls
                   playsInline
                 >
-                  <source src="https://www.talqeeny.com/assets/talqeeny.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                    <source src="https://www.talqeeny.com/assets/talqeeny.mp4" type="video/mp4" />
+                    Votre navigateur ne supporte pas la balise vidéo.
+                  </video>
               </div>
             </div>
 

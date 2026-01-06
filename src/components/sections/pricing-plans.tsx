@@ -106,46 +106,46 @@ const PricingPlans = () => {
                   </p>
                 </div>
 
-                {/* Features List */}
-                <div className="px-8 flex-grow">
-                  <ul className="space-y-4 text-left border-t border-black/5 pt-8 mb-8">
-                    {plan.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-center gap-3">
-                        <img src={plan.checkIcon} alt="check" className="w-5 h-5 flex-shrink-0" />
-                        <span className="text-[#003049] text-sm font-sans font-medium">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  {/* Features List */}
+                  <div className="px-8 flex-grow">
+                    <ul className="space-y-4 text-left border-t border-black/5 pt-8 mb-8">
+                      {plan.features.map((feature, fIdx) => (
+                        <li key={fIdx} className="flex items-center gap-3">
+                          <img src={plan.checkIcon} alt="crochet" className="w-5 h-5 flex-shrink-0" />
+                          <span className="text-[#003049] text-sm font-sans font-medium">
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                {/* Card Footer Button */}
-                <div className="px-6 pb-6 mt-auto">
-                  <a 
-                    href="https://www.talqeeny.com/register"
-                    className={`block w-full py-4 rounded-[15px] text-white font-sans font-bold text-center transition-opacity hover:opacity-90`}
-                    style={{ backgroundColor: plan.buttonBg }}
-                  >
-                    Choisir ce plan
-                  </a>
+                  {/* Card Footer Button */}
+                  <div className="px-6 pb-6 mt-auto">
+                    <a 
+                      href="https://www.talqeeny.com/register"
+                      className={`block w-full py-4 rounded-[15px] text-white font-sans font-bold text-center transition-opacity hover:opacity-90`}
+                      style={{ backgroundColor: plan.buttonBg }}
+                    >
+                      Choisir ce plan
+                    </a>
+                  </div>
                 </div>
+              ))}
               </div>
-            ))}
             </div>
           </div>
-        </div>
-        
-        {/* Background Decorative Element */}
-        <div className="absolute top-[20%] left-[-50px] opacity-20 pointer-events-none">
-          <Image 
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/workProcessShape1_1-13.png"
-            alt="decoration"
-            width={250}
-            height={250}
-            className="animate-pulse"
-          />
-        </div>
+          
+          {/* Background Decorative Element */}
+          <div className="absolute top-[20%] left-[-50px] opacity-20 pointer-events-none">
+            <Image 
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/workProcessShape1_1-13.png"
+              alt="décoration"
+              width={250}
+              height={250}
+              className="animate-pulse"
+            />
+          </div>
       </section>
     );
 };

@@ -11,51 +11,51 @@ const Footer = () => {
       <a
         href="https://wa.me/33756882188"
         target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-widget"
-        aria-label="Contact us on WhatsApp"
-      >
-        <Image
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/icons/whatsapp_icon-1.png"
-          alt="WhatsApp"
-          width={60}
-          height={60}
-          className="w-full h-full object-contain"
-        />
-      </a>
+          rel="noopener noreferrer"
+          className="whatsapp-widget"
+          aria-label="Contactez-nous sur WhatsApp"
+        >
+          <Image
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/icons/whatsapp_icon-1.png"
+            alt="WhatsApp"
+            width={60}
+            height={60}
+            className="w-full h-full object-contain"
+          />
+        </a>
 
-      <footer className="footer-section bg-[#FFFFFF] pt-20 pb-0 relative overflow-hidden">
-        {/* Background Decorative Shapes */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
-          <div className="absolute -left-[5%] bottom-[10%] opacity-100">
-            <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/footerShape1_1-5.png"
-              alt="shape"
-              width={450}
-              height={450}
-              className="object-contain"
-            />
+        <footer className="footer-section bg-[#FFFFFF] pt-20 pb-0 relative overflow-hidden">
+          {/* Background Decorative Shapes */}
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
+            <div className="absolute -left-[5%] bottom-[10%] opacity-100">
+              <Image
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/footerShape1_1-5.png"
+                alt="forme"
+                width={450}
+                height={450}
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute -right-[5%] bottom-[5%] opacity-100">
+              <Image
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/footerShape1_2-6.png"
+                alt="forme"
+                width={500}
+                height={500}
+                className="object-contain"
+              />
+            </div>
           </div>
-          <div className="absolute -right-[5%] bottom-[5%] opacity-100">
-            <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/footerShape1_2-6.png"
-              alt="shape"
-              width={500}
-              height={500}
-              className="object-contain"
-            />
-          </div>
-        </div>
 
-        <div className="container relative z-10 px-6 mx-auto max-w-[1240px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            
-            {/* Company Info Column */}
-            <div className="space-y-6">
-              <a href="/" className="inline-block">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/logo-1.png"
-                  alt="Talqeeny Logo"
+          <div className="container relative z-10 px-6 mx-auto max-w-[1240px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+              
+              {/* Company Info Column */}
+              <div className="space-y-6">
+                <a href="/" className="inline-block">
+                  <Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/logo-1.png"
+                    alt="Logo Talqeeny"
                   width={180}
                   height={50}
                   className="h-auto"

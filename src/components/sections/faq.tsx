@@ -96,7 +96,7 @@ export default function FAQ() {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/faq-21.jpg"
-          alt="Children learning"
+          alt="Enfants en train d'apprendre"
           fill
           className="object-cover"
           priority

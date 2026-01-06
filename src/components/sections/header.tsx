@@ -41,78 +41,78 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="https://www.talqeeny.com" className="block">
-                <Image
-                  src={logoUrl}
-                  alt="Talqeeny Logo"
-                  width={180}
-                  height={50}
-                  className="w-[140px] lg:w-[180px] h-auto"
-                  priority
-                />
-              </a>
-            </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:block">
-              <ul className="flex items-center space-x-8">
-                {navLinks.map((link) => (
-                  <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-[#0B485B] font-medium text-[15px] hover:text-[#2DB9B0] transition-colors duration-200"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
-            {/* Right Side Actions */}
-            <div className="flex items-center">
-              <div className="hidden lg:block">
-                <a
-                  href="https://www.talqeeny.com/login"
-                  className="inline-flex items-center justify-center gap-2 bg-[#33C6E5] hover:bg-[#2DB9B0] text-white font-bold text-[16px] px-8 py-3 rounded-full transition-all duration-300 group"
-                >
-                  Se connecter
-                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                <a href="https://www.talqeeny.com" className="block">
+                  <Image
+                    src={logoUrl}
+                    alt="Logo Talqeeny"
+                    width={180}
+                    height={50}
+                    className="w-[140px] lg:w-[180px] h-auto"
+                    priority
+                  />
                 </a>
               </div>
 
-              {/* Mobile Menu Toggle */}
-              <button
-                className="lg:hidden ml-4 p-2 text-[#0B485B]"
-                onClick={() => setIsMobileMenuOpen(true)}
-              >
-                <Menu className="w-8 h-8" />
-              </button>
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:block">
+                <ul className="flex items-center space-x-8">
+                  {navLinks.map((link) => (
+                    <li key={link.label}>
+                      <a
+                        href={link.href}
+                        className="text-[#0B485B] font-medium text-[15px] hover:text-[#2DB9B0] transition-colors duration-200"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+
+              {/* Right Side Actions */}
+              <div className="flex items-center">
+                <div className="hidden lg:block">
+                  <a
+                    href="https://www.talqeeny.com/login"
+                    className="inline-flex items-center justify-center gap-2 bg-[#33C6E5] hover:bg-[#2DB9B0] text-white font-bold text-[16px] px-8 py-3 rounded-full transition-all duration-300 group"
+                  >
+                    Se connecter
+                    <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  </a>
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <button
+                  className="lg:hidden ml-4 p-2 text-[#0B485B]"
+                  onClick={() => setIsMobileMenuOpen(true)}
+                >
+                  <Menu className="w-8 h-8" />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      {/* Mobile Sidebar Overlay */}
-      <div
-        className={`fixed inset-0 bg-black/50 z-[2000] transition-opacity duration-300 lg:hidden ${
-          isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-        onClick={() => setIsMobileMenuOpen(false)}
-      />
+        {/* Mobile Sidebar Overlay */}
+        <div
+          className={`fixed inset-0 bg-black/50 z-[2000] transition-opacity duration-300 lg:hidden ${
+            isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
 
-      {/* Mobile Sidebar Content */}
-      <div
-        className={`fixed top-0 right-0 h-full w-[300px] bg-[#33C6E5] z-[2001] transform transition-transform duration-300 lg:hidden ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="p-6">
-          <div className="flex items-center justify-between mb-8">
-            <a href="https://www.talqeeny.com">
-               <Image
-                  src={logoUrl}
-                  alt="Talqeeny Logo"
+        {/* Mobile Sidebar Content */}
+        <div
+          className={`fixed top-0 right-0 h-full w-[300px] bg-[#33C6E5] z-[2001] transform transition-transform duration-300 lg:hidden ${
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="p-6">
+            <div className="flex items-center justify-between mb-8">
+              <a href="https://www.talqeeny.com">
+                 <Image
+                    src={logoUrl}
+                    alt="Logo Talqeeny"
                   width={120}
                   height={40}
                   className="brightness-0 invert"

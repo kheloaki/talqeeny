@@ -36,42 +36,43 @@ const ProblemStatement = () => {
                   </p>
                 </div>
 
-                {/* Checklist */}
-                <ul className="checklist space-y-5 mb-10 wow fadeInUp" data-wow-delay=".2s">
-                  <li className="flex items-start gap-4">
-                    <div className="flex-shrink-0 mt-1">
-                      <Image 
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon2-1.svg" 
-                        alt="check blue" 
-                        width={24} 
-                        height={24} 
-                      />
-                    </div>
-                    <span className="text-[#003049] font-inter font-medium text-[16px]">Manque de temps et d’outils pour accompagner chaque jour.</span>
-                  </li>
-                  <li className="flex items-start gap-4">
-                    <div className="flex-shrink-0 mt-1">
-                      <Image 
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon1-2.svg" 
-                        alt="check yellow" 
-                        width={24} 
-                        height={24} 
-                      />
-                    </div>
-                    <span className="text-[#003049] font-inter font-medium text-[16px]">Enfants distraits, motivation qui chute rapidement.</span>
-                  </li>
-                  <li className="flex items-start gap-4">
-                    <div className="flex-shrink-0 mt-1">
-                      <Image 
-                        src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon3-3.svg" 
-                        alt="check orange" 
-                        width={24} 
-                        height={24} 
-                      />
-                    </div>
-                    <span className="text-[#003049] font-inter font-medium text-[16px]">Progression lente malgré de gros efforts à la maison.</span>
-                  </li>
-                </ul>
+                  {/* Checklist */}
+                  <ul className="checklist space-y-5 mb-10 wow fadeInUp" data-wow-delay=".2s">
+                    <li className="flex items-start gap-4">
+                      <div className="flex-shrink-0 mt-1">
+                        <Image 
+                          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon2-1.svg" 
+                          alt="crochet bleu" 
+                          width={24} 
+                          height={24} 
+                        />
+                      </div>
+                      <span className="text-[#003049] font-inter font-medium text-[16px]">Manque de temps et d’outils pour accompagner chaque jour.</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <div className="flex-shrink-0 mt-1">
+                        <Image 
+                          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon1-2.svg" 
+                          alt="crochet jaune" 
+                          width={24} 
+                          height={24} 
+                        />
+                      </div>
+                      <span className="text-[#003049] font-inter font-medium text-[16px]">Enfants distraits, motivation qui chute rapidement.</span>
+                    </li>
+                    <li className="flex items-start gap-4">
+                      <div className="flex-shrink-0 mt-1">
+                        <Image 
+                          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/svgs/checkmarkIcon3-3.svg" 
+                          alt="crochet orange" 
+                          width={24} 
+                          height={24} 
+                        />
+                      </div>
+                      <span className="text-[#003049] font-inter font-medium text-[16px]">Progression lente malgré de gros efforts à la maison.</span>
+                    </li>
+                  </ul>
+
 
                 {/* Button */}
                 <div className="about_more_info">
@@ -92,43 +93,43 @@ const ProblemStatement = () => {
         </div>
       </div>
 
-      {/* Floating Decorative Curves */}
-      <div className="absolute top-[15%] left-[5%] pointer-events-none animate-bounce duration-[3000ms] ease-in-out infinite hidden lg:block">
-        <Image 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-1-7.png" 
-          alt="curve decoration" 
-          width={60} 
-          height={60} 
-          className="opacity-60"
-        />
-      </div>
-      <div className="absolute bottom-[20%] right-[10%] pointer-events-none animate-pulse hidden lg:block">
-        <Image 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-5-8.png" 
-          alt="curve decoration" 
-          width={180} 
-          height={60} 
-          className="opacity-70"
-        />
-      </div>
-      <div className="absolute top-[10%] right-[5%] pointer-events-none hidden lg:block">
-        <Image 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-4-9.png" 
-          alt="curve decoration" 
-          width={150} 
-          height={80} 
-          className="opacity-50"
-        />
-      </div>
-      <div className="absolute bottom-[10%] left-[8%] pointer-events-none hidden lg:block">
-        <Image 
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-2-10.png" 
-          alt="curve decoration" 
-          width={100} 
-          height={50} 
-          className="opacity-60"
-        />
-      </div>
+        {/* Floating Decorative Curves */}
+        <div className="absolute top-[15%] left-[5%] pointer-events-none animate-bounce duration-[3000ms] ease-in-out infinite hidden lg:block">
+          <Image 
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-1-7.png" 
+            alt="décoration courbe" 
+            width={60} 
+            height={60} 
+            className="opacity-60"
+          />
+        </div>
+        <div className="absolute bottom-[20%] right-[10%] pointer-events-none animate-pulse hidden lg:block">
+          <Image 
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-5-8.png" 
+            alt="décoration courbe" 
+            width={180} 
+            height={60} 
+            className="opacity-70"
+          />
+        </div>
+        <div className="absolute top-[10%] right-[5%] pointer-events-none hidden lg:block">
+          <Image 
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-4-9.png" 
+            alt="décoration courbe" 
+            width={150} 
+            height={80} 
+            className="opacity-50"
+          />
+        </div>
+        <div className="absolute bottom-[10%] left-[8%] pointer-events-none hidden lg:block">
+          <Image 
+            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/curve-2-10.png" 
+            alt="décoration courbe" 
+            width={100} 
+            height={50} 
+            className="opacity-60"
+          />
+        </div>
     </section>
   );
 };

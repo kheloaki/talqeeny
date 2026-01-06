@@ -13,21 +13,21 @@ export default function Hero() {
       <div className="container mx-auto px-6">
         <div className="relative bg-[#F0FAFB] rounded-[40px] md:rounded-[60px] p-8 md:p-16 lg:p-20 overflow-hidden min-h-[550px] flex items-center">
           
-          {/* Decorative Shapes */}
-          <div className="absolute top-10 left-10 w-24 h-24 pointer-events-none hidden md:block">
-            <img 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png" 
-              alt="decorative shape"
-              className="w-full h-full object-contain opacity-80"
-            />
-          </div>
-          <div className="absolute bottom-10 left-1/2 w-32 h-32 pointer-events-none hidden lg:block">
-            <img 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png" 
-              alt="decorative shape"
-              className="w-full h-full object-contain opacity-60"
-            />
-          </div>
+            {/* Decorative Shapes */}
+            <div className="absolute top-10 left-10 w-24 h-24 pointer-events-none hidden md:block">
+              <img 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_1-3.png" 
+                alt="forme décorative"
+                className="w-full h-full object-contain opacity-80"
+              />
+            </div>
+            <div className="absolute bottom-10 left-1/2 w-32 h-32 pointer-events-none hidden lg:block">
+              <img 
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/introShape1_2-4.png" 
+                alt="forme décorative"
+                className="w-full h-full object-contain opacity-60"
+              />
+            </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
             {/* Left Content Column */}
