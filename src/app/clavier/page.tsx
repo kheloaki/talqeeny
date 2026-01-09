@@ -16,6 +16,11 @@ const ArabicKeyboard = () => {
     ["ئ", "ء", "ؤ", "ر", "لا", "ى", "ة", "و", "ز", "ظ"],
   ];
 
+  const latinNumbers: { [key: string]: string } = {
+    "١": "1", "٢": "2", "٣": "3", "٤": "4", "٥": "5",
+    "٦": "6", "٧": "7", "٨": "8", "٩": "9", "٠": "0"
+  };
+
   const handleKeyClick = (key: string) => {
     const textarea = textareaRef.current;
     if (!textarea) return;
@@ -94,15 +99,20 @@ const ArabicKeyboard = () => {
             <div className="space-y-3">
               {rows.map((row, rowIndex) => (
                 <div key={rowIndex} className="flex justify-center gap-2 flex-wrap">
-                  {row.map((key) => (
-                    <button
-                      key={key}
-                      onClick={() => handleKeyClick(key)}
-                      className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center bg-white border border-gray-200 rounded-xl text-xl lg:text-2xl font-medium text-[#0B485B] hover:bg-[#33C6E5] hover:text-white hover:border-[#33C6E5] transition-all duration-200 active:scale-95"
-                    >
-                      {key}
-                    </button>
-                  ))}
+                    {row.map((key) => (
+                      <button
+                        key={key}
+                        onClick={() => handleKeyClick(key)}
+                        className="w-10 h-10 lg:w-14 lg:h-14 flex flex-col items-center justify-center bg-white border border-gray-200 rounded-xl text-xl lg:text-2xl font-medium text-[#0B485B] hover:bg-[#33C6E5] hover:text-white hover:border-[#33C6E5] transition-all duration-200 active:scale-95 group"
+                      >
+                        {latinNumbers[key] && (
+                          <span className="text-[10px] lg:text-[11px] opacity-40 group-hover:opacity-100 leading-none mb-0.5">
+                            {latinNumbers[key]}
+                          </span>
+                        )}
+                        <span className="leading-none">{key}</span>
+                      </button>
+                    ))}
                 </div>
               ))}
 
