@@ -20,13 +20,14 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { label: "Accueil", href: "https://www.talqeeny.com" },
-    { label: "Arabe", href: "/course/arabic" },
-    { label: "Nourania", href: "/course/nouraniya" },
-    { label: "Coran", href: "/course/coran" },
-    { label: "Contactez-nous", href: "https://www.talqeeny.com/contact-us" },
-  ];
+    const navLinks = [
+      { label: "Accueil", href: "/" },
+      { label: "Arabe", href: "/course/arabic" },
+      { label: "Nourania", href: "/course/nouraniya" },
+      { label: "Coran", href: "/course/coran" },
+      { label: "Clavier", href: "/clavier" },
+      { label: "Contactez-nous", href: "https://www.talqeeny.com/contact-us" },
+    ];
 
   const logoUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/logo-1.png";
 
