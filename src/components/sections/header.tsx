@@ -25,7 +25,6 @@ const Header = () => {
       { label: "Arabe", href: "/course/arabic" },
       { label: "Nourania", href: "/course/nouraniya" },
       { label: "Coran", href: "/course/coran" },
-      { label: "Clavier", href: "/clavier" },
       { label: "Contactez-nous", href: "https://www.talqeeny.com/contact-us" },
     ];
 

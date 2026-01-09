@@ -75,8 +75,9 @@ const Footer = () => {
                 <li><a href="/" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Accueil</a></li>
                 <li><a href="/course/arabic" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Arabe</a></li>
                 <li><a href="/course/nouraniya" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Nourania</a></li>
-                <li><a href="/course/coran" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Coran</a></li>
-                <li><a href="#" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Qui Sommes-Nous</a></li>
+                  <li><a href="/course/coran" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Coran</a></li>
+                  <li><a href="/clavier" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Clavier</a></li>
+                  <li><a href="#" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Qui Sommes-Nous</a></li>
                 <li><a href="/contact-us" className="text-[#6B7280] hover:text-[#2DB9B0] transition-colors text-[16px]">Contactez-Nous</a></li>
               </ul>
             </div>
