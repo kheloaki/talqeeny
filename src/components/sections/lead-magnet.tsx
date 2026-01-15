@@ -17,9 +17,9 @@ export default function LeadMagnet() {
             <div className="bg-white text-[#29ABE2] px-4 py-1 rounded-full text-[14px] font-bold inline-block mb-6 uppercase tracking-wider font-inter">
               Vidéo Gratuite
             </div>
-            <h2 className="text-white text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
-              Apprenez Sourate Al-Fatiha
-            </h2>
+<h2 className="text-orange-400 text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
+                Apprenez Sourate Al-Fatiha
+              </h2>
             <p className="text-white/90 text-[18px] mb-8 leading-[1.6] font-inter">
               Recevez gratuitement notre vidéo complète pour apprendre à réciter Sourate Al-Fatiha avec le Tajwid correct. Un premier pas vers la mémorisation du Coran.
             </p>
