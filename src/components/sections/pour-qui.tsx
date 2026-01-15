@@ -5,7 +5,7 @@ const targets = [
   {
     icon: BookOpen,
     title: "Débutant (Lecture)",
-    description: "Apprendre à lire le Coran en partant de zéro. Nous utilisons la méthode Nourania pour vous donner des bases solides rapidement."
+    description: "Apprendre à lire le Coran en partant de zéro. Nous utilisons la méthode Talqeen (Nourania adaptée) pour une progression fluide et rapide tout en introduisant des règles de base du Tajwid."
   },
   {
     icon: Headphones,
