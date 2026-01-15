@@ -8,7 +8,8 @@ const steps = [
     outcomes: [
       "Maîtriser l'alphabet et la prononciation correcte",
       "Lire des mots et des phrases simples avec précision",
-      "Découvrir les premières règles de tajwid"
+      "Découvrir les premières règles de tajwid",
+      "Mémorisation avec la méthode Talqeen"
     ]
   },
   {
@@ -17,7 +18,8 @@ const steps = [
     outcomes: [
       "Lire le Coran avec fluidité et sans hésitation",
       "Appliquer les règles de prolongement et d'arrêt",
-      "Améliorer le rythme et la mélodie de récitation"
+      "Améliorer le rythme et la mélodie de récitation",
+      "Mémorisation du Coran"
     ]
   },
   {
@@ -26,7 +28,8 @@ const steps = [
     outcomes: [
       "Maîtriser les nuances les plus fines du tajwid",
       "Mémoriser le Coran avec une méthode d'ancrage",
-      "Devenir autonome dans sa lecture et sa révision"
+      "Devenir autonome dans sa lecture et sa révision",
+      "Mémorisation du Coran"
     ]
   }
 ];
