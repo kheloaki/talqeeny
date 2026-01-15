@@ -8,7 +8,7 @@ const items = [
   { icon: Target, text: "Correction immédiate des erreurs" },
   { icon: BookOpen, text: "Mémoriser le Coran (Hifz)" },
   { icon: Sun, text: "Méthode Nourania pas à pas" },
-  { icon: Music, text: "Arabe coranique (Vocabulaire)" },
+  { icon: Music, text: "Éducation islamique : Invocation, Tafsir simplifié,..." },
   { icon: LineChart, text: "Suivi rigoureux des progrès" }
 ];
 
