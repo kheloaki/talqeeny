@@ -2,10 +2,6 @@ import React from 'react';
 
 const steps = [
   {
-    title: "Test de niveau (2 min)",
-    description: "Évaluez vos connaissances actuelles en 2 minutes pour trouver le parcours le plus adapté à vos besoins."
-  },
-  {
     title: "Placement",
     description: "Nous vous intégrons dans un groupe homogène ou vous attribuons un professeur pour vos cours individuels."
   },
