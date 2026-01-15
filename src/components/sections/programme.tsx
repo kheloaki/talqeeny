@@ -7,7 +7,7 @@ const items = [
   { icon: Wind, text: "Récitation du Coran fluide" },
   { icon: Target, text: "Correction immédiate des erreurs" },
   { icon: BookOpen, text: "Mémoriser le Coran (Hifz)" },
-  { icon: Sun, text: "Qaida Nourania pas à pas" },
+  { icon: Sun, text: "Méthode Nourania pas à pas" },
   { icon: Music, text: "Arabe coranique (Vocabulaire)" },
   { icon: LineChart, text: "Suivi rigoureux des progrès" }
 ];

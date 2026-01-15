@@ -19,8 +19,8 @@ const faqData = [
     answer: "Nous utilisons principalement la méthode Nourania. C'est une approche progressive qui permet de maîtriser la prononciation correcte des lettres (Makharij) et d'entrer rapidement dans la lecture des mots et des versets."
   },
   {
-    question: "Qu'est-ce que la Qaida Nourania ?",
-    answer: "La Qaida Nourania est une méthode d'apprentissage de la lecture de l'arabe et du Coran. Elle est célèbre pour son efficacité à enseigner les règles de tajwid dès les premières étapes de l'apprentissage."
+    question: "Qu'est-ce que la Méthode Nourania ?",
+    answer: "La Méthode Nourania est une méthode d'apprentissage de la lecture de l'arabe et du Coran. Elle est célèbre pour son efficacité à enseigner les règles de tajwid dès les premières étapes de l'apprentissage."
   },
   {
     question: "La méthode Nourania, c'est pour qui ?",

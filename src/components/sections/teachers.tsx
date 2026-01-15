@@ -3,19 +3,19 @@ import Image from 'next/image';
 
 const teachers = [
   {
-    name: "Pr. Ahmed",
-    expertise: "Spécialiste du Tajwîd",
-    description: "Expert en makhârij et en correction de la lecture pour les francophones."
+    name: "Pr. Abdellah",
+    expertise: "CORAN & ÉDUCATION ISLAMIQUE",
+    description: "Certifié dans la narration de Hafs, il accompagne ses élèves francophones avec rigueur et bienveillance pour passer de l'initiation à une lecture fluide et correcte du Coran."
   },
   {
-    name: "Pr. Maryam",
-    expertise: "Accompagnement Mémorisation",
-    description: "Spécialisée dans les méthodes de mémorisation durable et efficace."
+    name: "Pr. Ihsane",
+    expertise: "SCIENCES ISLAMIQUES & ARABE",
+    description: "Diplômée d'un Master en Études Islamiques et certifiée en Qaïda Nourania, elle enseigne l'arabe et le Coran avec une pédagogie adaptée aux enfants et aux adultes."
   },
   {
-    name: "Pr. Youssef",
-    expertise: "Pédagogie Francophone",
-    description: "Expert en transmission des bases de la lecture avec une approche simplifiée."
+    name: "Pr. Doae",
+    expertise: "LECTURES & VARIANTES (QIRA'AT)",
+    description: "Experte certifiée dans les lectures de référence (Ash-Shatibiyyah) et la narration de Abi Amr Al-Basri, elle accompagne les élèves vers une maîtrise avancée du Tajwid et de la mémorisation durable avec une approche simplifiée."
   }
 ];
 

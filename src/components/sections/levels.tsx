@@ -6,10 +6,7 @@ const steps = [
     level: "Niveau 1",
     title: "Initiation & Méthode Nourania",
     outcomes: [
-      "Maîtriser l'alphabet et la prononciation correcte",
-      "Lire des mots et des phrases simples avec précision",
-      "Découvrir les premières règles de tajwid",
-      "Mémorisation avec la méthode Talqeen (répétition guidée)"
+      "Mémorisation avec la méthode Talqeen"
     ]
   },
   {
