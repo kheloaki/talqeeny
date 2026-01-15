@@ -9,7 +9,7 @@ const steps = [
       "Maîtriser l'alphabet et la prononciation correcte",
       "Lire des mots et des phrases simples avec précision",
       "Découvrir les premières règles de tajwid",
-      "Mémorisation avec la méthode Talqeen"
+      "Mémorisation avec la méthode Talqeen (répétition guidée)"
     ]
   },
   {
