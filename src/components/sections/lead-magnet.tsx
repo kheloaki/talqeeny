@@ -9,7 +9,7 @@ export default function LeadMagnet() {
       <div className="container px-6 mx-auto max-w-[1240px] space-y-12">
         
         {/* Video Banner - Surat Al-Fatiha */}
-        <div className="bg-[#29ABE2] rounded-[40px] md:rounded-[60px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
+        <div className="bg-orange-500 rounded-[40px] md:rounded-[60px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 blur-3xl -ml-16 -mt-16 rounded-full"></div>
           <div className="absolute bottom-0 right-0 w-40 h-40 bg-white/5 blur-3xl -mr-20 -mb-20 rounded-full"></div>
           
