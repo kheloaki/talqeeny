@@ -23,21 +23,35 @@ export default function Objectifs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-          {objectives.map((obj, idx) => (
-            <div key={idx} className="flex gap-4 p-8 bg-[#F0FAFB] rounded-[30px] border border-transparent hover:border-[#29ABE2] transition-all duration-300 shadow-sm items-start group">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            {objectives.map((obj, idx) => (
+              <div key={idx} className="flex gap-4 p-8 bg-[#F0FAFB] rounded-[30px] border border-transparent hover:border-[#29ABE2] transition-all duration-300 shadow-sm items-start group">
+                <div className="mt-1 bg-white p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+                  <CheckCircle2 className="w-6 h-6 text-[#29ABE2]" />
+                </div>
+                <div>
+                  <h3 className="text-[#003049] text-[20px] font-bold mb-2 font-poppins">{obj.title}</h3>
+                  <p className="text-[#5E6266] text-[16px] leading-[1.6] font-inter">
+                    {obj.outcome}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8">
+            <div className="flex gap-4 p-8 bg-[#F0FAFB] rounded-[30px] border border-transparent hover:border-[#29ABE2] transition-all duration-300 shadow-sm items-start group">
               <div className="mt-1 bg-white p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
                 <CheckCircle2 className="w-6 h-6 text-[#29ABE2]" />
               </div>
               <div>
-                <h3 className="text-[#003049] text-[20px] font-bold mb-2 font-poppins">{obj.title}</h3>
+                <h3 className="text-[#003049] text-[20px] font-bold mb-2 font-poppins">Activités islamiques diversifiées</h3>
                 <p className="text-[#5E6266] text-[16px] leading-[1.6] font-inter">
-                  {obj.outcome}
+                  Le programme est enrichi par des activités islamiques diversifiées : des leçons de Tajwid (étude de la Tohfa et de la Jazarya), l'apprentissage des invocations, des récits sur les Prophètes, ainsi que des cours d'éducation et bienséance islamique.
                 </p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
       </div>
     </section>
   );

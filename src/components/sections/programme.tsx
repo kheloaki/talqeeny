@@ -5,10 +5,10 @@ const items = [
   { icon: Ear, text: "Articulations et traits des lettres" },
   { icon: Zap, text: "Règles de tajwid (théorie & pratique)" },
   { icon: Wind, text: "Récitation du Coran fluide" },
-  { icon: Target, text: "Correction immédiate des erreurs" },
+  { icon: Target, text: "Education islamiques : Invocation, Tafsir simplifié..." },
   { icon: BookOpen, text: "Mémoriser le Coran (Hifz)" },
   { icon: Sun, text: "Méthode Nourania pas à pas" },
-  { icon: Music, text: "Éducation islamique : Invocation, Tafsir simplifié,..." },
+  { icon: Music, text: "Arabe coranique (Vocabulaire)" },
   { icon: LineChart, text: "Suivi rigoureux des progrès" }
 ];
 
