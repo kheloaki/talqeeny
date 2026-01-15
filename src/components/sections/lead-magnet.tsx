@@ -9,17 +9,17 @@ export default function LeadMagnet() {
       <div className="container px-6 mx-auto max-w-[1240px] space-y-12">
         
         {/* Video Banner - Surat Al-Fatiha */}
-        <div className="bg-orange-500 rounded-[40px] md:rounded-[60px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
+        <div className="bg-[#29ABE2] rounded-[40px] md:rounded-[60px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-12 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-32 h-32 bg-white/10 blur-3xl -ml-16 -mt-16 rounded-full"></div>
           <div className="absolute bottom-0 right-0 w-40 h-40 bg-white/5 blur-3xl -mr-20 -mb-20 rounded-full"></div>
           
           <div className="lg:max-w-[500px] relative z-10">
-            <div className="bg-white text-orange-500 px-4 py-1 rounded-full text-[14px] font-bold inline-block mb-6 uppercase tracking-wider font-inter">
+            <div className="bg-white text-[#29ABE2] px-4 py-1 rounded-full text-[14px] font-bold inline-block mb-6 uppercase tracking-wider font-inter">
               Vidéo Gratuite
             </div>
-<h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
-                Apprenez Sourate Al-Fatiha
-              </h2>
+<h2 className="text-white text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
+              Apprenez Sourate Al-Fatiha
+            </h2>
             <p className="text-white/90 text-[18px] mb-8 leading-[1.6] font-inter">
               Recevez gratuitement notre vidéo complète pour apprendre à réciter Sourate Al-Fatiha avec le Tajwid correct. Un premier pas vers la mémorisation du Coran.
             </p>
