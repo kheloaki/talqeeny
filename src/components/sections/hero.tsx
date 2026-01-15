@@ -61,28 +61,22 @@ export default function Hero() {
                   </ul>
                 </div>
 
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <a 
-                        href="#pricing-plans" 
-                        className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group whitespace-nowrap"
-                      >
-                          Réserver une séance gratuite
-                          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                      </a>
-                      <a 
-                        href="#how-it-works" 
-                        className="inline-flex items-center justify-center gap-3 bg-white border-2 border-[#29ABE2] text-[#29ABE2] hover:bg-[#F0FAFB] px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 font-inter whitespace-nowrap"
-                      >
-                          Faire le test de niveau (2 min)
-                      </a>
-                    </div>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                        <a 
+                          href="#pricing-plans" 
+                          className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group whitespace-nowrap"
+                        >
+                            Réserver une séance gratuite
+                            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                        </a>
+                      </div>
                   <div className="flex flex-col gap-2 mt-4">
                     <p className="text-[#5E6266] text-sm md:text-base font-medium pl-2">
                       à partir de 26€ / mois
                     </p>
                     <p className="text-[#5E6266]/70 text-[13px] italic pl-2">
-                      Idéal pour débutants : commencez votre voyage spirituel dès aujourd'hui.
-                    </p>
+                        Idéal pour débutants et intermédiaires : commencez votre voyage spirituel dès aujourd'hui.
+                      </p>
                   </div>
             </div>
 

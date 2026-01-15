@@ -1,51 +1,28 @@
-"use client";
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Quote, Star } from 'lucide-react';
 
 const allTestimonials = [
   {
-    name: "Ahmed",
+    name: "Adrien",
     role: "Adulte",
-    content: "Une méthode incroyable, j'ai enfin appris à lire avec la Nourania.",
+    content: "En moins d'un an avec Cheikh Abdallah, nous sommes passés de débutants complets à une lecture fluide du Coran. Sa pédagogie rigoureuse et bienveillante, adaptée aussi bien aux adultes qu'aux enfants, permet d'assimiler rapidement la théorie et la pratique du Tajwid. Un enseignement d'excellence que nous recommandons vivement !",
     rating: 5
   },
   {
-    name: "Sofia",
+    name: "Rim",
     role: "Parent",
-    content: "Mes enfants adorent leurs cours, ils progressent sans s'en rendre compte.",
+    content: "Pour sa deuxième année de Coran avec Madame Hind, Safwan bénéficie d'un accompagnement de grande qualité. Sa méthodologie pertinente, centrée sur la prononciation correcte et des encouragements constants, offre un cadre d'apprentissage idéal. Une enseignante que je recommande vivement !",
     rating: 5
   },
   {
-    name: "Yassine",
+    name: "Abdollah",
     role: "Étudiant",
-    content: "La correction du tajwid est très précise, je sens vraiment la différence.",
-    rating: 5
-  },
-  {
-    name: "Leila",
-    role: "Adulte",
-    content: "Le suivi hifz m'aide à rester motivée et régulière.",
-    rating: 5
-  },
-  {
-    name: "Karim",
-    role: "Adulte",
-    content: "Professeurs très pédagogues et patients avec les débutants.",
-    rating: 5
-  },
-  {
-    name: "Mariam",
-    role: "Parent",
-    content: "La plateforme est simple et les cours en direct sont très interactifs.",
+    content: "J'aime vraiment beaucoup les cours que je fais avec Moualima Ihsane, que ce soit pour le Coran, l'arabe ou l'éducation Islamique. Elle est toujours très souriante avec moi et elle me donne beaucoup de motivation pour apprendre. C'est un plaisir de suivre ses leçons parce qu'elle est super gentille et qu'on avance bien ensemble.",
     rating: 5
   }
 ];
 
 export default function Testimonials() {
-  const [showAll, setShowAll] = useState(false);
-  const visibleTestimonials = showAll ? allTestimonials : allTestimonials.slice(0, 3);
-
   return (
     <section id="avis" className="py-20 bg-[#f0fafb]">
       <div className="container px-6 mx-auto max-w-[1240px]">
@@ -59,7 +36,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {visibleTestimonials.map((t, idx) => (
+          {allTestimonials.map((t, idx) => (
             <div key={idx} className="bg-white p-8 rounded-[20px] shadow-sm hover:shadow-md transition-shadow relative">
               <Quote className="absolute top-6 right-8 w-10 h-10 text-[#29BDAD] opacity-10" />
               <div className="flex gap-1 mb-4">
@@ -77,17 +54,6 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
-
-        {!showAll && (
-          <div className="text-center">
-            <button 
-              onClick={() => setShowAll(true)}
-              className="text-[#29BDAD] font-bold text-[18px] hover:underline transition-all"
-            >
-              Voir plus de témoignages
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );

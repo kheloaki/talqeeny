@@ -17,14 +17,13 @@ export default function TrustBar() {
             <p className="text-[#6C757D] text-[10px] font-bold uppercase tracking-widest">Avis élèves vérifiés</p>
           </div>
 
-          {/* Proof Items */}
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 flex-1">
-            {[
-              { icon: MessageSquare, text: "Cours en direct" },
-              { icon: ShieldCheck, text: "Suivi personnalisé" },
-              { icon: Users, text: "Spécial Francophones" },
-              { icon: Star, text: "500+ élèves accompagnés" },
-            ].map((item, idx) => (
+            {/* Proof Items */}
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 flex-1">
+              {[
+                { icon: MessageSquare, text: "Cours en direct" },
+                { icon: ShieldCheck, text: "Suivi personnalisé" },
+                { icon: Users, text: "Spécial Francophones" },
+              ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-3">
                 <div className="flex-shrink-0 p-2 rounded-full bg-[#29BDAD]/10">
                   <item.icon className="w-4 h-4 text-[#29BDAD]" />
