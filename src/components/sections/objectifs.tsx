@@ -4,7 +4,7 @@ import { CheckCircle2 } from 'lucide-react';
 const objectives = [
   { title: "Lire le Coran avec fluidité", outcome: "Finissez-en avec les hésitations et les blocages grâce à la méthode Nourania." },
   { title: "Maîtriser les règles de tajwid", outcome: "Apprenez et appliquez les règles de tajwid essentielles pour une récitation conforme." },
-  { title: "Prononciation (Makharij)", outcome: "Maîtrisez les articulations et traits des lettres pour une prononciation parfaite." },
+  { title: "Articulations et traits des lettres", outcome: "Maîtrisez les points d'articulation (Makharij) et les caractéristiques (Sifat) pour une prononciation parfaite." },
   { title: "Mémoriser le Coran (Hifz)", outcome: "Instaurez une routine solide pour avancer pas à pas dans votre mémorisation." },
   { title: "Réviser sans oublier", outcome: "Utilisez des méthodes d'ancrage pour stabiliser vos acquis durablement." },
   { title: "Arabe coranique", outcome: "Commencez à comprendre le sens des mots que vous récitez au quotidien." }
