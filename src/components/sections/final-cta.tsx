@@ -28,12 +28,7 @@ export default function FinalCTA() {
                 >
                   Réserver une séance gratuite <ArrowRight className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#how-it-works"
-                  className="bg-white/10 hover:bg-white/20 text-white border-2 border-white/20 px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 w-full sm:w-auto text-center font-inter"
-                >
-                  Faire le test de niveau (2 min)
-                </a>
+
               </div>
               
               <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 text-white/60 text-[15px] font-inter">
