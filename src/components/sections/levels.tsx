@@ -76,19 +76,7 @@ export default function Levels() {
           </div>
         </div>
 
-        <div className="mt-16 bg-[#003049] p-8 md:p-12 rounded-[40px] md:rounded-[60px] flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative shadow-lg">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-[#29ABE2]/10 blur-3xl -mr-16 -mt-16 rounded-full"></div>
-          <div className="text-white text-center md:text-left relative z-10">
-            <h4 className="text-[24px] font-bold mb-2 font-poppins">Vous ne connaissez pas votre niveau ?</h4>
-            <p className="text-white/80 font-inter">Faites le test de niveau (2 min) pour être placé dans le bon groupe.</p>
-          </div>
-          <a 
-            href="#how-it-works" 
-            className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-bold transition-all flex items-center gap-2 whitespace-nowrap relative z-10 shadow-md transform hover:scale-105"
-          >
-            Faire le test de niveau (2 min) <ArrowRight className="w-5 h-5" />
-          </a>
-        </div>
+
       </div>
     </section>
   );
