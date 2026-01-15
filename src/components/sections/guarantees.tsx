@@ -12,18 +12,18 @@ export default function Guarantees() {
   return (
     <section id="rassurance" className="py-12 bg-[#003049]">
       <div className="container px-6 mx-auto max-w-[1240px]">
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-y-8 gap-x-12">
-          {guarantees.map((item, idx) => (
-            <div key={idx} className="flex items-center gap-4 group">
-              <div className="bg-[#29ABE2] p-3 rounded-full group-hover:scale-110 transition-transform shadow-md">
-                <item.icon className="w-6 h-6 text-white" />
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {guarantees.map((item, idx) => (
+              <div key={idx} className="flex items-center gap-4 group">
+                <div className="bg-[#29ABE2] p-3 rounded-full group-hover:scale-110 transition-transform shadow-md flex-shrink-0">
+                  <item.icon className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-white font-bold text-[16px] md:text-[18px] font-inter">
+                  {item.text}
+                </span>
               </div>
-              <span className="text-white font-bold text-[16px] md:text-[18px] font-inter">
-                {item.text}
-              </span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
       </div>
     </section>
   );
