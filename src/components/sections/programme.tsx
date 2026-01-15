@@ -2,7 +2,7 @@ import React from 'react';
 import { Ear, Music, Wind, Zap, Target, BookOpen, Sun, LineChart } from 'lucide-react';
 
 const items = [
-  { icon: Ear, text: "Articulations et traits des lettres (Makharij et Sifat)" },
+  { icon: Ear, text: "Articulations et traits des lettres" },
   { icon: Zap, text: "Règles de tajwid (théorie & pratique)" },
   { icon: Wind, text: "Récitation du Coran fluide" },
   { icon: Target, text: "Correction immédiate des erreurs" },
