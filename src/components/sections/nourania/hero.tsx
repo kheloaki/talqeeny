@@ -29,7 +29,7 @@ export default function NouraniaHero() {
                     Cours de Nourania en ligne : Apprenez à lire le Coran
                   </h1>
                   <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter mb-6">
-                    La méthode Nourania (Qaida Nourania) pour francophones : apprenez les lettres, les voyelles et la lecture progressive — en direct avec un professeur.
+                    La méthode Nourania (Qaida Nourania) pour francophones : apprenez les lettres, les voyelles et la lecture progressive, en direct avec un professeur.
                   </p>
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-center gap-2 text-[#5E6266] font-inter">

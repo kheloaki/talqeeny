@@ -49,7 +49,7 @@ export default function ArabicPourQui() {
 
           <div className="mt-12 text-center">
             <p className="bg-[#003049] text-white inline-block px-6 py-2 rounded-full text-[15px] font-semibold font-inter">
-              Enfants & adultes — groupes par niveau.
+              Enfants & adultes | groupes par niveau.
             </p>
           </div>
         </div>

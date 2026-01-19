@@ -8,7 +8,7 @@ const ArabicPricingPlans = () => {
         title: "Al Kissay",
         price: "24€",
         period: "/ mois",
-        yearlyInfo: "Groupe — 1 séance / semaine",
+        yearlyInfo: "Groupe | 1 séance / semaine",
         features: [
           "Apprentissage en Groupe",
           "1 Séance par semaine",
@@ -23,7 +23,7 @@ const ArabicPricingPlans = () => {
         title: "Sibawayh",
         price: "38€",
         period: "/ mois",
-        yearlyInfo: "Groupe — 2 séances / semaine",
+        yearlyInfo: "Groupe | 2 séances / semaine",
         features: [
           "Apprentissage en Groupe",
           "2 Séances par semaine",
@@ -38,7 +38,7 @@ const ArabicPricingPlans = () => {
         title: "Al Khalil Ibn Ahmed",
         price: "59€",
         period: "/ mois",
-        yearlyInfo: "Individuel — 1 séance / semaine",
+        yearlyInfo: "Individuel | 1 séance / semaine",
         features: [
           "Apprentissage Individuel",
           "1 Séance par semaine",
@@ -53,7 +53,7 @@ const ArabicPricingPlans = () => {
         title: "Ibn Hicham",
         price: "59€",
         period: "/ mois",
-        yearlyInfo: "Individuel — 1 séance / semaine",
+        yearlyInfo: "Individuel | 1 séance / semaine",
         features: [
           "Apprentissage Individuel",
           "1 Séance par semaine",
@@ -68,7 +68,7 @@ const ArabicPricingPlans = () => {
         title: "Ibn Malik",
         price: "59€",
         period: "/ mois",
-        yearlyInfo: "Individuel — 1 séance / semaine",
+        yearlyInfo: "Individuel | 1 séance / semaine",
         features: [
           "Apprentissage Individuel",
           "1 Séance par semaine",

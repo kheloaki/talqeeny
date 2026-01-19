@@ -29,7 +29,7 @@ export default function ArabicHero() {
                     Cours d'arabe en ligne : Lisez, Écrivez et Progressez
                   </h1>
                   <p className="text-[16px] md:text-[18px] text-[#5E6266] leading-[1.7] font-inter mb-6">
-                    Une méthode simple pour francophones (enfants & adultes) : alphabet arabe, lecture progressive, vocabulaire et bases essentielles — en direct avec un professeur.
+                    Une méthode simple pour francophones (enfants & adultes) : alphabet arabe, lecture progressive, vocabulaire et bases essentielles, en direct avec un professeur.
                   </p>
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-center gap-2 text-[#5E6266] font-inter">
