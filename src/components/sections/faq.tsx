@@ -58,10 +58,7 @@ const faqData = [
     question: "Est-il possible de faire une séance d'essai ?",
     answer: "Oui, vous pouvez réserver une séance gratuite pour découvrir notre méthode, rencontrer un professeur et évaluer votre niveau."
   },
-  {
-    question: "Comment se déroule le test de niveau ?",
-    answer: "Le test de niveau dure environ 2 minutes et permet de vous placer dans le groupe le plus adapté à vos compétences actuelles en récitation du Coran."
-  },
+
   {
     question: "La lecture du Coran pendant le Ramadan est-elle abordée ?",
     answer: "Oui, nous proposons des accompagnements spécifiques pour vous préparer à la lecture du Coran lors du Ramadan et intensifier votre lien avec le Livre Sacré."

@@ -16,23 +16,17 @@ export default function NouraniaFinalCTA() {
                 Prêt à apprendre à lire le Coran avec la méthode Nourania ?
               </h2>
               <p className="text-white/80 text-[18px] md:text-[20px] mb-12 max-w-[700px] mx-auto leading-[1.6] font-inter">
-                Test de niveau + placement dans le bon groupe, en direct avec un professeur.
+                Placement dans le bon groupe, en direct avec un professeur.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a 
-                  href="#pricing-plans"
-                  className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 transform hover:scale-105 font-inter"
-                >
-                  Réserver une séance gratuite <ArrowRight className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#pricing-plans"
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#003049] px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2 font-inter"
-                >
-                  Faire le test de niveau (2 min)
-                </a>
-              </div>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                  <a 
+                    href="#pricing-plans"
+                    className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 transform hover:scale-105 font-inter"
+                  >
+                    Réserver une séance gratuite <ArrowRight className="w-5 h-5" />
+                  </a>
+                </div>
               
               <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-4 text-white/60 text-[15px] font-inter">
                 <div className="flex items-center gap-2">
