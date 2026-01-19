@@ -5,14 +5,14 @@ import { Check, ArrowRight } from 'lucide-react';
 const NouraniaPricingPlans = () => {
     const plans = [
       {
-        title: "Nouraniya",
-        price: "63€",
+        title: "Nourania Individuel",
+        price: "110€",
         period: "/ mois",
-        yearlyInfo: "Soit 189 € / 3 mois",
+        yearlyInfo: "Soit 329 € / 3 mois",
         features: [
-          "Méthode Nourania complète",
-          "Cours en direct",
-          "Suivi personnalisé"
+          "Cours individuel 1:1",
+          "1 séance / semaine (60 min)",
+          "100% personnalisé"
         ],
         bgColor: "bg-[#D9F2F7]",
         buttonBg: "#29ABE2",
@@ -22,48 +22,18 @@ const NouraniaPricingPlans = () => {
       },
       {
         title: "Nourania Groupe",
-        price: "45€",
-        period: "/ mois",
-        yearlyInfo: "Groupe — 1 séance / semaine",
+        price: "Sur demande",
+        period: "",
+        yearlyInfo: "Groupe de 5-7 élèves",
         features: [
-          "Apprentissage en Groupe",
-          "1 Séance par semaine",
+          "Apprentissage en groupe",
+          "1 séance / semaine (60-90 min)",
           "Motivation collective"
         ],
         bgColor: "bg-[#FFF4E0]",
         buttonBg: "#F9BE2F",
         textColor: "text-[#003049]",
         checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon1.svg"
-      },
-      {
-        title: "Nourania Intensif",
-        price: "75€",
-        period: "/ mois",
-        yearlyInfo: "Groupe — 2 séances / semaine",
-        features: [
-          "Apprentissage en Groupe",
-          "2 Séances par semaine",
-          "Progression accélérée"
-        ],
-        bgColor: "bg-[#E0F2F1]",
-        buttonBg: "#2CBDB2",
-        textColor: "text-[#003049]",
-        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon3.svg"
-      },
-      {
-        title: "Nourania Individuel",
-        price: "89€",
-        period: "/ mois",
-        yearlyInfo: "Individuel — 1 séance / semaine",
-        features: [
-          "Apprentissage Individuel",
-          "1 Séance par semaine",
-          "100% personnalisé"
-        ],
-        bgColor: "bg-[#E3F2FD]",
-        buttonBg: "#33C6E5",
-        textColor: "text-[#003049]",
-        checkIcon: "https://www.talqeeny.com/assets/images/icon/checkmarkIcon2.svg"
       }
     ];
 
@@ -88,11 +58,11 @@ const NouraniaPricingPlans = () => {
                 Choisissez votre formule selon votre niveau et votre objectif (lecture du Coran, bases du tajwîd, fluidité).
               </p>
               <p className="text-white font-bold text-xl">
-                À partir de 63 €/mois (soit l'équivalent de 189 € / 3 mois)
+                À partir de 110 €/mois (soit l'équivalent de 329 € / 3 mois)
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto translate-y-[10%] md:translate-y-[15%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[800px] mx-auto translate-y-[10%] md:translate-y-[15%]">
 
             {plans.map((plan, index) => (
               <div 

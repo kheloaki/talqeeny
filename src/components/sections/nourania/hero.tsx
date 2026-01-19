@@ -70,7 +70,7 @@ export default function NouraniaHero() {
                         </div>
                   <div className="flex flex-col gap-2 mt-4">
                     <p className="text-[#5E6266] text-sm md:text-base font-medium pl-2">
-                      À partir de 63 €/mois (soit l'équivalent de 189 € / 3 mois)
+                      À partir de 110 €/mois (soit l'équivalent de 329 € / 3 mois)
                     </p>
                     <p className="text-[#5E6266]/70 text-[13px] italic pl-2">
                         Idéal pour apprendre à lire le Coran avec la méthode Nourania.
