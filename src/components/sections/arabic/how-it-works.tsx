@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
 const steps = [
   {
@@ -45,9 +46,19 @@ export default function ArabicHowItWorks() {
                 </p>
               </div>
             </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="mt-16 flex justify-center">
+            <a 
+              href="#pricing-plans"
+              className="bg-[#29ABE2] text-white hover:bg-[#003049] px-10 py-5 rounded-full font-bold transition-all text-center flex items-center justify-center gap-3 font-inter shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              Voir les tarifs <ArrowRight className="w-6 h-6" />
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-  );
-}
+      </section>
+    );
+  }
+
