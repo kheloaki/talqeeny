@@ -64,7 +64,7 @@ export default function ArabicFormats() {
 
         <div className="mt-16 text-center">
           <p className="text-[#5E6266] text-[16px] italic font-inter">
-            Vous hésitez ? <a href="#test" className="text-[#29ABE2] font-bold hover:underline">Faites le test de niveau</a> pour en discuter avec nous.
+            Vous hésitez ? <a href="#pricing-plans" className="text-[#29ABE2] font-bold hover:underline">Contactez-nous</a> pour en discuter avec nous.
           </p>
         </div>
       </div>

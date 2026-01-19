@@ -16,7 +16,7 @@ export default function ArabicFinalCTA() {
                 Prêt à commencer votre apprentissage de l'arabe ?
               </h2>
               <p className="text-white/80 text-[18px] md:text-[20px] mb-12 max-w-[700px] mx-auto leading-[1.6] font-inter">
-                Test de niveau + placement dans le bon groupe, en direct avec un professeur.
+                Placement dans le bon groupe, en direct avec un professeur.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -25,12 +25,6 @@ export default function ArabicFinalCTA() {
                   className="bg-[#29ABE2] hover:bg-[#2399cc] text-white px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 transform hover:scale-105 font-inter"
                 >
                   Réserver une séance gratuite <ArrowRight className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#test"
-                  className="bg-white text-[#003049] px-10 py-5 rounded-full text-[18px] font-bold transition-all duration-300 shadow-lg hover:shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 transform hover:scale-105 font-inter"
-                >
-                  Faire le test de niveau (2 min)
                 </a>
               </div>
               

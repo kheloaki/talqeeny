@@ -170,15 +170,9 @@ const ArabicPricingPlans = () => {
 
               <div className="mt-8 text-center">
                 <p className="text-[#5E6266] mb-6">
-                  Besoin d'aide ? Faites le test de niveau (2 min) ou réservez une séance gratuite.
+                  Besoin d'aide ? Réservez une séance gratuite pour en discuter.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="#test"
-                    className="inline-flex items-center justify-center gap-2 bg-white border-2 border-[#003049] text-[#003049] hover:bg-[#003049] hover:text-white px-6 py-3 rounded-full font-semibold transition-all"
-                  >
-                    Faire le test de niveau (2 min)
-                  </a>
                   <a 
                     href="#pricing-plans"
                     className="inline-flex items-center justify-center gap-2 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-6 py-3 rounded-full font-semibold transition-all"

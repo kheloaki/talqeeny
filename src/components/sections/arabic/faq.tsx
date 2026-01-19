@@ -61,10 +61,6 @@ const faqData = [
   {
     question: "Y a-t-il des devoirs entre les séances ?",
     answer: "Nous proposons des mini-exercices simples (optionnels) pour renforcer vos acquis. Ils sont corrigés lors de la séance suivante."
-  },
-  {
-    question: "Comment fonctionne le test de niveau ?",
-    answer: "Le test dure environ 2 minutes. Il nous permet de vous orienter vers le groupe le plus adapté à vos compétences actuelles."
   }
 ];
 

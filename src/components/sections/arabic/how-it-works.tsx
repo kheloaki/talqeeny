@@ -3,7 +3,7 @@ import React from 'react';
 const steps = [
   {
     title: "Placement",
-    description: "Test de niveau + orientation vers le bon groupe adapté à vos compétences."
+    description: "Orientation vers le bon groupe adapté à vos compétences et vos objectifs."
   },
   {
     title: "Cours en direct",
