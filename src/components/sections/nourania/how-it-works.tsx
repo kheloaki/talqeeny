@@ -1,0 +1,63 @@
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+const steps = [
+  {
+    title: "Test & placement",
+    description: "Évaluation de votre niveau et orientation vers le bon groupe adapté à vos compétences."
+  },
+  {
+    title: "Cours en direct",
+    description: "Pratique guidée avec la méthode Nourania : lettres, voyelles, lecture progressive avec correction immédiate."
+  },
+  {
+    title: "Suivi personnalisé",
+    description: "Corrections + plan de révision simple pour consolider vos acquis et progresser vers la lecture du Coran."
+  }
+];
+
+export default function NouraniaHowItWorks() {
+  return (
+    <section id="how-it-works" className="py-20 bg-white">
+      <div className="container px-6 mx-auto max-w-[1240px]">
+        <div className="text-center mb-16">
+          <h2 className="text-[#003049] text-[32px] md:text-[42px] font-bold mb-4 font-poppins">
+            Comment ça se passe ?
+          </h2>
+          <p className="text-[#5E6266] text-[18px] max-w-[700px] mx-auto font-inter">
+            Un processus simple et transparent pour commencer votre apprentissage avec la méthode Nourania.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center max-w-[1000px] mx-auto">
+          {steps.map((step, idx) => (
+            <div key={idx} className="relative group h-full">
+              <div className="absolute -top-4 -left-4 text-[100px] font-black text-[#29ABE2]/5 select-none leading-none group-hover:text-[#29ABE2]/10 transition-colors">
+                0{idx + 1}
+              </div>
+              
+              <div className="bg-[#F0FAFB] p-10 rounded-[40px] shadow-sm relative z-10 h-full border border-transparent group-hover:border-[#29ABE2]/20 transition-all flex flex-col">
+                <div className="w-12 h-12 rounded-full bg-[#29ABE2] text-white flex items-center justify-center font-bold text-[20px] mb-6 shadow-sm">
+                  {idx + 1}
+                </div>
+                <h3 className="text-[#003049] text-[20px] font-bold mb-4 font-poppins">{step.title}</h3>
+                <p className="text-[#5E6266] text-[16px] leading-[1.6] font-inter">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+            ))}
+          </div>
+
+          <div className="mt-16 flex justify-center">
+            <a 
+              href="#pricing-plans"
+              className="bg-[#29ABE2] text-white hover:bg-[#003049] px-10 py-5 rounded-full font-bold transition-all text-center flex items-center justify-center gap-3 font-inter shadow-lg hover:shadow-xl hover:-translate-y-1"
+            >
+              Voir les tarifs <ArrowRight className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </section>
+    );
+  }
