@@ -4,7 +4,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react';
 const points = [
   "Cours d'arabe en ligne en direct",
   "Corrections immédiates",
-  "Pédagogie adaptée aux francophones",
+  "Pédagogie adaptée à tout âge : une structure robuste pour les adultes et une approche ludique pour captiver les enfants",
   "Suivi continu de la progression",
   "Apprentissage interactif et bienveillant"
 ];
