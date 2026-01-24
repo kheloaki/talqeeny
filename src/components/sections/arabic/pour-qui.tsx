@@ -12,11 +12,11 @@ const targets = [
     title: "Intermédiaire (Lecture & bases)",
     description: "Vous lisez un peu mais vous bloquez : fluidité, vocabulaire, règles simples. Consolidez vos acquis et gagnez en confiance."
   },
-  {
-    icon: Trophy,
-    title: "Arabe coranique (option)",
-    description: "Vous voulez apprendre l'arabe coranique : vocabulaire fréquent + structures utiles pour mieux comprendre les textes sacrés."
-  }
+{
+      icon: Trophy,
+      title: "Arabe classique (Option)",
+      description: "Un programme conçu pour mieux lire et comprendre les textes sacrés du Coran et du Hadith Nabawi grâce à une approche structurée et ciblée."
+    }
 ];
 
 export default function ArabicPourQui() {
