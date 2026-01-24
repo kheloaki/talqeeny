@@ -7,7 +7,7 @@ const objectives = [
   { title: "Lire progressivement (syllabes → mots → phrases)", outcome: "Passez des syllabes simples à la lecture fluide de phrases complètes." },
   { title: "Améliorer la prononciation", outcome: "Travaillez les sons spécifiques de l'arabe pour une prononciation claire." },
   { title: "Gagner en fluidité", outcome: "Développez une lecture naturelle et confiante grâce à la pratique régulière." },
-  { title: "Préparer la lecture du Coran", outcome: "La Qaida Nourania vous prépare à aborder la lecture coranique sereinement." }
+  { title: "Préparer la lecture du Coran", outcome: "La méthode Nourania vous prépare à aborder la lecture coranique sereinement." }
 ];
 
 export default function NouraniaObjectifs() {

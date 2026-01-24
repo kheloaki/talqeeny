@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 
 const faqData = [
   {
-    question: "Qu'est-ce que la Qaida Nourania ?",
-    answer: "La Qaida Nourania (ou Nouraniya) est une méthode pédagogique reconnue mondialement pour apprendre à lire l'arabe et le Coran. Elle enseigne progressivement les lettres, les voyelles et les règles de lecture."
+    question: "Qu'est-ce que la méthode Nourania ?",
+    answer: "La méthode Nourania (ou Nouraniya) est une approche pédagogique reconnue mondialement pour apprendre à lire l'arabe et le Coran. Elle enseigne progressivement les lettres, les voyelles et les règles de lecture."
   },
   {
     question: "La méthode Nourania, c'est pour qui ?",
@@ -20,7 +20,7 @@ const faqData = [
   },
   {
     question: "Comment apprendre à lire le Coran quand on ne lit pas l'arabe ?",
-    answer: "La Qaida Nourania est la première étape idéale. Elle vous apprend les lettres, les voyelles et les bases de lecture avant d'aborder les textes coraniques."
+    answer: "La méthode Nourania est la première étape idéale. Elle vous apprend les lettres, les voyelles et les bases de lecture avant d'aborder les textes coraniques."
   },
   {
     question: "Après Nourania, je fais quoi (Coran / tajwîd / mémorisation) ?",
@@ -28,7 +28,7 @@ const faqData = [
   },
   {
     question: "Comment se passent les cours en direct ?",
-    answer: "Vous vous connectez à l'heure prévue en visioconférence. Le professeur guide la séance avec des exercices interactifs basés sur la Qaida Nourania et corrige votre prononciation en temps réel."
+    answer: "Vous vous connectez à l'heure prévue en visioconférence. Le professeur guide la séance avec des exercices interactifs basés sur la méthode Nourania et corrige votre prononciation en temps réel."
   },
   {
     question: "Combien de temps pour maîtriser la Nourania ?",
@@ -36,7 +36,7 @@ const faqData = [
   },
   {
     question: "Quelle est la différence entre Nourania et Nouraniya ?",
-    answer: "Ce sont deux orthographes de la même méthode (قاعدة نورانية). Les deux termes désignent la Qaida Nourania, une méthode d'apprentissage de la lecture arabe."
+    answer: "Ce sont deux orthographes de la même méthode (قاعدة نورانية). Les deux termes désignent la méthode Nourania, une méthode d'apprentissage de la lecture arabe."
   },
   {
     question: "Groupe ou individuel : que choisir ?",

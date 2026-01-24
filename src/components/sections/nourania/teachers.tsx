@@ -4,7 +4,7 @@ const teachers = [
   {
     name: "Pr. Abdellah",
     expertise: "NOURANIA & LECTURE CORANIQUE",
-    description: "Pédagogie claire pour francophones, spécialiste de la Qaida Nourania. Il accompagne ses élèves avec rigueur et bienveillance vers la lecture du Coran."
+    description: "Pédagogie claire pour francophones, spécialiste de la méthode Nourania. Il accompagne ses élèves avec rigueur et bienveillance vers la lecture du Coran."
   },
   {
     name: "Pr. Ihsane",

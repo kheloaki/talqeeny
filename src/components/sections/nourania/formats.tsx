@@ -6,7 +6,7 @@ const formats = [
     icon: Users,
     title: "Petit groupe",
     pros: ["Motivation collective", "Dynamique d'échange", "Budget optimisé"],
-    description: "Apprenez la Qaida Nourania avec d'autres élèves de même niveau. Une ambiance conviviale pour progresser ensemble."
+    description: "Apprenez la méthode Nourania avec d'autres élèves de même niveau. Une ambiance conviviale pour progresser ensemble."
   },
     {
       icon: User,

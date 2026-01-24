@@ -16,21 +16,21 @@ export default function NouraniaLeadMagnet() {
               <div className="bg-white text-[#29ABE2] px-4 py-1 rounded-full text-[14px] font-bold inline-block mb-6 uppercase tracking-wider font-inter">
                 PDF Gratuit
               </div>
-              <h2 className="text-white/90 text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
-                Recevez la fiche PDF : Les bases de la Qaida Nourania
-              </h2>
-            <p className="text-white/90 text-[18px] mb-8 leading-[1.6] font-inter">
-              Lettres + voyelles + premières lectures (idéal débutant). Parfait pour découvrir la méthode Nourania.
-            </p>
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-4 rounded-full">
-                <BookOpen className="w-8 h-8 text-white" />
+                <h2 className="text-white/90 text-[32px] md:text-[42px] font-bold mb-6 leading-[1.2] font-poppins">
+                  Recevez la fiche PDF : Les bases de la méthode Nourania
+                </h2>
+              <p className="text-white/90 text-[18px] mb-8 leading-[1.6] font-inter">
+                Lettres + voyelles + premières lectures (idéal débutant). Parfait pour découvrir la méthode Nourania.
+              </p>
+              <div className="flex items-center gap-4">
+                <div className="bg-white/20 p-4 rounded-full">
+                  <BookOpen className="w-8 h-8 text-white" />
+                </div>
+                <div className="text-white">
+                  <p className="font-bold font-inter">Guide PDF complet</p>
+                  <p className="text-white/80 text-sm font-inter">Bases de la méthode Nourania</p>
+                </div>
               </div>
-              <div className="text-white">
-                <p className="font-bold font-inter">Guide PDF complet</p>
-                <p className="text-white/80 text-sm font-inter">Bases de la Qaida Nourania</p>
-              </div>
-            </div>
           </div>
 
           <div className="w-full lg:max-w-[450px] bg-white p-8 md:p-10 rounded-[40px] shadow-xl relative z-10">

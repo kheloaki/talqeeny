@@ -10,7 +10,7 @@ const targets = [
   {
     icon: Headphones,
     title: "Lecture hésitante",
-    description: "Vous lisez mais lentement, avec des erreurs. Consolidez vos bases avec la Qaida Nourania."
+    description: "Vous lisez mais lentement, avec des erreurs. Consolidez vos bases avec la méthode Nourania."
   },
   {
     icon: Trophy,

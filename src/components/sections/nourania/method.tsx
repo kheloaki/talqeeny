@@ -27,7 +27,7 @@ export default function NouraniaMethod() {
             <div className="absolute top-0 right-0 w-24 h-24 bg-[#29ABE2]/5 blur-2xl rounded-full -mr-12 -mt-12"></div>
             <h3 className="text-[#003049] text-[28px] font-bold mb-6 font-poppins relative z-10">Pourquoi la méthode Nourania ?</h3>
             <p className="text-[#5E6266] text-[18px] leading-[1.7] mb-6 font-inter relative z-10">
-              La Qaida Nourania est reconnue mondialement pour son efficacité dans l'apprentissage de la lecture du Coran. Cours en direct, pratique immédiate, corrections en temps réel.
+              La méthode Nourania est reconnue mondialement pour son efficacité dans l'apprentissage de la lecture du Coran. Cours en direct, pratique immédiate, corrections en temps réel.
             </p>
             <p className="text-[#5E6266] text-[18px] leading-[1.7] font-inter relative z-10">
               Notre pédagogie est spécifiquement pensée pour le public francophone, facilitant l'apprentissage des lettres arabes et la compréhension des voyelles.

@@ -5,13 +5,13 @@ const allTestimonials = [
   {
     name: "Fatima",
     role: "Adulte",
-    content: "J'ai enfin compris les voyelles et je lis plus facilement. La Qaida Nourania est expliquée simplement, parfaite pour les francophones.",
+    content: "J'ai enfin compris les voyelles et je lis plus facilement. La méthode Nourania est expliquée simplement, parfaite pour les francophones.",
     rating: 5
   },
   {
     name: "Ahmed",
     role: "Parent",
-    content: "La Qaida Nourania est expliquée simplement, idéal pour francophones. Mon fils progresse chaque semaine et gagne en confiance.",
+    content: "La méthode Nourania est expliquée simplement, idéal pour francophones. Mon fils progresse chaque semaine et gagne en confiance.",
     rating: 5
   },
   {
