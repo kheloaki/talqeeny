@@ -7,7 +7,7 @@ const items = [
   { icon: Wind, text: "Lecture progressive" },
   { icon: Target, text: "Vocabulaire essentiel" },
   { icon: BookOpen, text: "Grammaire simplifiée" },
-  { icon: Sun, text: "Compréhension de phrases" },
+  { icon: Sun, text: "Produire des échanges simples et reconnaître les expressions du quotidien" },
   { icon: Music, text: "Arabe coranique (option)" },
   { icon: LineChart, text: "Suivi rigoureux des progrès" }
 ];
