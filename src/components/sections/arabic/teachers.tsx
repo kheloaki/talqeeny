@@ -12,7 +12,7 @@ const teachers = [
     description: "Pédagogie claire pour francophones, corrections en direct, progression structurée. Elle enseigne l'arabe avec une approche adaptée à tous les profils."
   },
   {
-    name: "Pr. Doae",
+    name: "Pr. Saadia",
     expertise: "ARABE CLASSIQUE",
     description: "Pédagogie claire pour francophones, corrections en direct, progression structurée. Elle accompagne les élèves vers une maîtrise solide de la lecture."
   }

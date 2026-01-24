@@ -6,7 +6,8 @@ const points = [
   "Corrections immédiates",
   "Pédagogie adaptée à tout âge : une structure robuste pour les adultes et une approche ludique pour captiver les enfants",
   "Suivi continu de la progression",
-  "Apprentissage interactif et bienveillant"
+  "Apprentissage interactif et bienveillant",
+  "Intégration des valeurs et de islamique (Al-Adab)"
 ];
 
 export default function ArabicMethod() {

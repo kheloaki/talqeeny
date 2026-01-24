@@ -83,10 +83,12 @@ const ArabicPricingPlans = () => {
 
     const included = [
       "Cours en direct",
-      "Groupes par niveau",
+      "Groupes par niveau ou cours individuels",
       "Corrections en temps réel",
       "Suivi de progression",
-      "Conseils de révision"
+      "Conseils de révision",
+      "Supports de cours complets",
+      "Activités ludiques interactives pour enfants"
     ];
 
     return (
@@ -177,7 +179,7 @@ const ArabicPricingPlans = () => {
                     href="#pricing-plans"
                     className="inline-flex items-center justify-center gap-2 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-6 py-3 rounded-full font-semibold transition-all"
                   >
-                    Réserver une séance gratuite <ArrowRight className="w-4 h-4" />
+                    Profiter de 15 jours gratuits <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
               </div>
