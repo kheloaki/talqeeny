@@ -44,13 +44,20 @@ export default function ArabicHero() {
                       </div>
                       Petits groupes ou cours individuels
                     </li>
-                    <li className="flex items-center gap-2 text-[#5E6266] font-inter">
-                      <div className="w-5 h-5 rounded-full bg-[#29ABE2]/10 flex items-center justify-center">
-                        <div className="w-2 h-2 rounded-full bg-[#29ABE2]"></div>
-                      </div>
-                      Pédagogie adaptée aux francophones, débutants bienvenus
-                    </li>
-                  </ul>
+                    <li className="flex items-start gap-2 text-[#5E6266] font-inter">
+                        <div className="w-5 h-5 rounded-full bg-[#29ABE2]/10 flex items-center justify-center mt-1 flex-shrink-0">
+                          <div className="w-2 h-2 rounded-full bg-[#29ABE2]"></div>
+                        </div>
+                        <div>
+                          <span className="font-semibold text-[#003049]">Pédagogie dédiée aux francophones, adaptée à tout âge :</span>
+                          <ul className="mt-2 space-y-1 text-sm">
+                            <li><span className="font-medium">Pour les enfants :</span> un apprentissage ludique et interactif pour apprendre tout en s'amusant.</li>
+                            <li><span className="font-medium">Pour les adultes :</span> Une méthode structurée pour maîtriser l'arabe au quotidien et accéder progressivement à la langue du Coran.</li>
+                          </ul>
+                          <p className="mt-2 text-sm italic">Débutants bienvenus.</p>
+                        </div>
+                      </li>
+                    </ul>
                 </div>
 
                         <div className="flex flex-col sm:flex-row flex-wrap gap-4">
