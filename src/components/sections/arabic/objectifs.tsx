@@ -47,7 +47,7 @@ export default function ArabicObjectifs() {
               <div>
                 <h3 className="text-[#003049] text-[20px] font-bold mb-2 font-poppins">Exercices pratiques & révisions guidées</h3>
                 <p className="text-[#5E6266] text-[16px] leading-[1.6] font-inter">
-                  Mini-devoirs simples + corrections pour progresser durablement. Une méthode concrète pour ancrer vos acquis.
+                  Mini-devoirs adaptés à tout âge : des exercices concrets pour les adultes et des activités ludiques pour les enfants, basés sur des exemples qui cultivent les bonnes manières (Al-Adab) et les valeurs éthiques de l'Islam.
                 </p>
               </div>
             </div>
