@@ -8,7 +8,7 @@ const steps = [
     outcomes: [
       "Reconnaître et écrire les lettres arabes",
       "Lire syllabes et mots simples",
-      "Maîtriser les sons de base"
+      "produire des échanges simples et reconnaître les expressions du quotidien"
     ]
   },
   {
@@ -17,12 +17,14 @@ const steps = [
     outcomes: [
       "Fluidité et compréhension simple",
       "Vocabulaire essentiel au quotidien",
-      "Règles de grammaire basiques"
+      "Règles de grammaire basiques",
+      "Comprendre des phrases isolées liées à la vie quotidienne",
+      "Devenir capable de lire et d'écrire des messages courts"
     ]
   },
   {
     level: "Niveau 3",
-    title: "Consolidation & Arabe coranique (option)",
+    title: "Consolidation & Arabe Classique (option)",
     outcomes: [
       "Lecture stable et autonome",
       "Vocabulaire coranique fréquent",

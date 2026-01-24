@@ -7,9 +7,9 @@ const items = [
   { icon: Wind, text: "Lecture progressive" },
   { icon: Target, text: "Vocabulaire essentiel" },
   { icon: BookOpen, text: "Grammaire simplifiée" },
-  { icon: Sun, text: "Produire des échanges simples et reconnaître les expressions du quotidien" },
+  { icon: Sun, text: "Compréhension de phrases" },
   { icon: Music, text: "Arabe coranique (option)" },
-  { icon: LineChart, text: "Suivi rigoureux des progrès" }
+  { icon: LineChart, text: "Produire des échanges simples et reconnaître les expressions du quotidien" }
 ];
 
 export default function ArabicProgramme() {
