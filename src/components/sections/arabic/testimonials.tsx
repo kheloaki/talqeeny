@@ -3,21 +3,21 @@ import { Quote, Star } from 'lucide-react';
 
 const allTestimonials = [
   {
-    name: "Sophie",
-    role: "Adulte",
-    content: "J'ai enfin appris l'alphabet arabe et je lis sans stress. La méthode est claire et progressive, parfaite pour les francophones comme moi.",
-    rating: 5
-  },
-  {
-    name: "Karim",
+    name: "Rim",
     role: "Parent",
-    content: "Méthode claire pour francophones, progrès rapides en lecture. Mon fils a fait des progrès remarquables en quelques mois seulement.",
+    content: "Expérience merveilleuse avec Madame Hind. Grâce à la méthode Al-Qaida An-Nouraniyya, ma fille a mémorisé 3 Hizb et adore la langue arabe. L'atmosphère est excellente, faite de patience et de compassion. Je recommande vivement !",
     rating: 5
   },
   {
-    name: "Marie",
+    name: "Fareyal",
     role: "Adulte",
-    content: "Parfait même en tant qu'adulte débutant. Je n'aurais jamais pensé pouvoir lire l'arabe un jour, et maintenant je progresse chaque semaine !",
+    content: "En tant que non-arabophone, j'apprécie énormément les cours de Moualima Maryem. Elle explique les règles avec une clarté remarquable et une grande douceur. Ses notes et ses explications sont un vrai plus chaque semaine.",
+    rating: 5
+  },
+  {
+    name: "Adrien",
+    role: "Adulte",
+    content: "Nous avons commencé sans aucune connaissance en janvier 2025 avec Oustad Abdallah. En novembre, mes enfants et moi savons déjà lire le Coran ! Sa pédagogie est excellente, très rigoureuse sur la prononciation et les prolongations. Une bénédiction pour notre famille.",
     rating: 5
   }
 ];
