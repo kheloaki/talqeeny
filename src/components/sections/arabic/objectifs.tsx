@@ -7,7 +7,7 @@ const objectives = [
   { title: "Lire des mots puis des phrases", outcome: "Passez progressivement de la lecture de syllabes à des phrases complètes." },
   { title: "Écrire progressivement (lettres, mots)", outcome: "Apprenez à tracer les lettres arabes et à écrire vos premiers mots." },
   { title: "Comprendre un vocabulaire essentiel", outcome: "Acquérez le vocabulaire de base pour communiquer et comprendre des textes simples." },
-  { title: "Arabe coranique (bases utiles)", outcome: "Découvrez le vocabulaire et les structures fréquentes dans les textes coraniques." }
+  { title: "Arabe classique (bases utiles)", outcome: "Découvrez le vocabulaire et les structures fréquentes dans les textes sacrés du Coran et du Hadith Nabawi." }
 ];
 
 export default function ArabicObjectifs() {
