@@ -65,7 +65,7 @@ export default function ArabicHero() {
                             href="#pricing-plans" 
                             className="inline-flex items-center justify-center gap-3 bg-[#29ABE2] hover:bg-[#2399cc] text-white px-8 py-4 rounded-full font-semibold text-[16px] transition-all duration-300 transform hover:scale-105 shadow-md font-inter group whitespace-nowrap"
                           >
-                              Réserver une séance gratuite
+                              Profiter de 15 jours gratuits
                               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                           </a>
                           <a 
