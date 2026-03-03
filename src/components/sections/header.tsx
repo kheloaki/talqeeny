@@ -20,13 +20,7 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-    const navLinks = [
-      { label: "Accueil", href: "/" },
-      { label: "Arabe", href: "/course/arabic" },
-      { label: "Nourania", href: "/course/nouraniya" },
-      { label: "Coran", href: "/course/coran" },
-      { label: "Contactez-nous", href: "https://www.talqeeny.com/contact-us" },
-    ];
+    const navLinks: { label: string; href: string }[] = [];
 
   const logoUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/e45c9f35-e52b-4c3b-800c-6b6caddca86c-talqeeny-com/assets/images/logo-1.png";
 
@@ -53,21 +47,23 @@ const Header = () => {
                 </a>
               </div>
 
-              {/* Desktop Navigation */}
-              <nav className="hidden lg:block">
-                <ul className="flex items-center space-x-8">
-                  {navLinks.map((link) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-[#0B485B] font-medium text-[15px] hover:text-[#2DB9B0] transition-colors duration-200"
-                      >
-                        {link.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              {/* Desktop Navigation - hidden when no links */}
+              {navLinks.length > 0 && (
+                <nav className="hidden lg:block">
+                  <ul className="flex items-center space-x-8">
+                    {navLinks.map((link) => (
+                      <li key={link.label}>
+                        <a
+                          href={link.href}
+                          className="text-[#0B485B] font-medium text-[15px] hover:text-[#2DB9B0] transition-colors duration-200"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              )}
 
               {/* Right Side Actions */}
               <div className="flex items-center">
@@ -126,21 +122,23 @@ const Header = () => {
             </button>
           </div>
 
-          <nav className="mb-8">
-            <ul className="space-y-4">
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-white text-lg font-semibold block py-2 hover:opacity-80 transition-opacity"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          {navLinks.length > 0 && (
+            <nav className="mb-8">
+              <ul className="space-y-4">
+                {navLinks.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-white text-lg font-semibold block py-2 hover:opacity-80 transition-opacity"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           <div className="pt-6 border-t border-white/20">
             <a
