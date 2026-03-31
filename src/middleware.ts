@@ -4,8 +4,19 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Legacy /course/* URLs are redirected in next.config.ts
+  if (pathname.startsWith("/course/")) {
+    return NextResponse.next();
+  }
+
   // Allow the clavier page and Next.js internals
   if (pathname === "/clavier" || pathname.startsWith("/clavier/")) {
+    return NextResponse.next();
+  }
+  if (pathname === "/arabe" || pathname.startsWith("/arabe/")) {
+    return NextResponse.next();
+  }
+  if (pathname === "/nourania" || pathname.startsWith("/nourania/")) {
     return NextResponse.next();
   }
   if (
